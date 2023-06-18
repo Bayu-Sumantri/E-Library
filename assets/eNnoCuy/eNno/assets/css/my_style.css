@@ -1,0 +1,16 @@
+.tengah {
+  text-align: center;
+}
+
+.tengah-vertikal {
+  vertical-align: middle;
+}
+
+.btn-action {
+  width: 70px;
+}
+
+.flex-content {
+  display: flex;
+  justify-content: space-around;
+}

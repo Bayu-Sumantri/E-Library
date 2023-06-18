@@ -1,0 +1,2906 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script src="/cdn-cgi/apps/head/FcAJudjM_Qz5pQpYsjD5QMgGcOE.js"></script><link rel="apple-touch-icon" sizes="57x57" href="/static/apple-icon-57x57.89a2138dbb68.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/static/apple-icon-60x60.9357fe194a73.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/static/apple-icon-72x72.15bb3404cda5.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/static/apple-icon-76x76.317e28410ab4.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/static/apple-icon-114x114.4cf416d535c9.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/static/apple-icon-120x120.b8bba699af97.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/static/apple-icon-144x144.78e6e055e504.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/static/apple-icon-152x152.338eb7b8672c.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-icon-180x180.e6fabee76578.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/static/android-icon-192x192.55abe74830da.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.862496117861.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.ab247dc0f547.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.43cf88a59fab.png">
+<link rel="manifest" href="/static/manifest.b58fcfa7628c.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/static/ms-icon-144x144.78e6e055e504.png">
+<meta name="theme-color" content="#ffffff">
+<title>Search | CODOH</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+<script>window.twttr = (function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0],
+             t = window.twttr || {};
+         if (d.getElementById(id)) return t;
+         js = d.createElement(s);
+         js.id = id;
+         js.src = "//platform.twitter.com/widgets.js";
+         fjs.parentNode.insertBefore(js, fjs);
+         t._e = [];
+         t.ready = function(f) {
+             t._e.push(f);
+         };
+         return t;
+     }(document, "script", "twitter-wjs"));</script>
+<link rel="stylesheet" href="/static/CACHE/css/output.7a76a98c8edb.css" type="text/css">
+<script src="https://kit.fontawesome.com/a1ccce1a4d.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<script src="/static/CACHE/js/output.4a7f40eb69cd.js"></script>
+<script type="text/javascript" src="/static/codoh/js/require.1565af44b896.js"></script>
+<script type="text/javascript" src="/static/codoh/js/require-config.0a6e388f352a.js"></script>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+         fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
+<div id="top">
+<header id="header">
+<nav class="navbar container" role="navigation" aria-label="main navigation">
+<div class="navbar-brand">
+<a class="navbar-item" href="/">
+<div class="column is-small">
+<div id="logo"></div>
+</div>
+</a>
+<div class="navbar-burger" data-target="navMenu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div id="navMenu" class="navbar-menu">
+<div class="navbar-item is-hidden-tablet search-form">
+<form action="/search/" method="get" style="flex: 1">
+<input name="sorting" type="hidden" value="relevance" />
+<div class="field has-addons">
+<div class="control has-icons-left" style="flex: 1"></div>
+<input id="id_q" class="is-small input" name="q" type="text" placeholder="Suche" value="" />
+<span class="icon is-small is-left">
+<i class="fa fa-search"></i>
+</span>
+</div>
+</form>
+</div>
+<a href="/about" title="About us" class="navbar-item ">
+<span>About us </span>
+</a>
+<a href="/library" title="Library" class="navbar-item ">
+<span>Library </span>
+</a>
+<a href="/library/videos" title="Videos" class="navbar-item ">
+<span>Videos </span>
+</a>
+<a href="/contact-us" title="Contact" class="navbar-item ">
+<span>Contact </span>
+</a>
+<a href="/donate" title="Donate" class="navbar-item ">
+<span>Donate </span>
+</a>
+<a href="/volunteer" title="Volunteer" class="navbar-item ">
+<span>Volunteer </span>
+</a>
+<a href="https://inconvenienthistory.com/" title="Inconv. History" class="navbar-item ">
+<span>Inconv. History &nbsp;<i class="fa fa-external-link is-small" style="font-size: .8em"></i></span>
+</a>
+<a href="https://forum.codoh.com" title="Forum" class="navbar-item ">
+<span>Forum &nbsp;<i class="fa fa-external-link is-small" style="font-size: .8em"></i></span>
+</a>
+<a href="https://shop.codoh.com" title="Book Shop" class="navbar-item ">
+<span>Book Shop &nbsp;<i class="fa fa-external-link is-small" style="font-size: .8em"></i></span>
+</a>
+<a href="https://merchandise.codoh.com/" title="Merch" class="navbar-item ">
+<span>Merch &nbsp;<i class="fa fa-external-link is-small" style="font-size: .8em"></i></span>
+</a>
+<div class="navbar-item is-hidden-desktop login-actions">
+<div class="level">
+<div class="level-left">
+<div class="level-item">
+<a class="button is-primary is-small" href="/login">
+Login
+</a>
+<a class="button is-primary is-small" href="/register">
+Become a volunteer
+</a>
+</div>
+</div>
+<div class="level-right">
+<div class="level-item">
+<form action="/i18n/setlang/" method="post">
+<input type="hidden" name="csrfmiddlewaretoken" value="rLp50gx1mii6r0phB1r0cB4hsaDHnHYd5hnoNy6sDph9KMukVMxXeO6T1wSbVDNL">
+<input class="is-small" name="next" type="hidden" value="" />
+<div class="field has-addons">
+<div class="control has-icons-left is-expanded">
+<div class="select is-fullwidth">
+<select name="language" style="color: black !important">
+<option value="en" selected>English</option>
+<option value="de">Deutsch</option>
+</select>
+</div>
+<div class="icon is-small is-left" style="color: black !important">
+<i class="fa fa-flag"></i>
+</div>
+</div>
+<div class="control">
+<input class="button" type="submit" value="Go" />
+</div>
+</div>
+</form>
+</div>
+</div>
+ </div>
+</div>
+</div>
+</nav>
+<div class="container actions navbar">
+<div id="search" class="is-hidden-mobile navbar-item is-expanded" style="padding-top: 0; padding-bottom: 0">
+<form method="get" action="/search/" style="height: 100%; flex-grow: 1">
+<input name="sorting" type="hidden" value="relevance" />
+<div class="field has-addons" style="height: 100%">
+<div class="control has-icons-left" style="flex-grow: 1">
+<input id="id_q" class="is-small input" name="q" type="text" placeholder="Suche" style="height: 100%" value="" />
+<span class="icon is-small is-left" style="height: 100%">
+<i class="fa fa-search"></i>
+</span>
+</div>
+</div>
+</form>
+</div>
+<div class="navbar-end is-hidden-touch has-text-gray is-size-7">
+<div id="login" class="column">
+<a class="is-link" href="/search/">Advanced search</a>
+<a href="/login">Login</a>
+<a href="/register">Become a volunteer</a>
+</div>
+</div>
+</div>
+</header>
+<aside class='contribute report-problem' id='report-problem'>
+<a href="/contact-us/%252Fsearch%252F%253Fsorting%253Drelevance%2526q%253Dthe%252Beinsatzgruppen/" class="button is-small">
+<div class='fa fa-bug'></div>
+<span style='padding-left: 5px'>
+Report a problem
+</span>
+</a>
+</aside>
+<div id="below-header" class="container">
+<div id="below-tabs">
+<section class="banner">
+</section>
+<section class="main-content columns is-fullheight">
+<aside id="sidebar_left" class="menu column is-one-quarter is-fullheight section is-hidden-touch">
+<section class='tile'>
+<div style='width: 100%' id='set-language'>
+<div class='menu-label'>
+Browse CODOH in
+<i title='Browse CODOH in a different language' class='fa fa-question-circle'></i>
+</div>
+<form action='/i18n/setlang/' method='post'>
+<input type="hidden" name="csrfmiddlewaretoken" value="rLp50gx1mii6r0phB1r0cB4hsaDHnHYd5hnoNy6sDph9KMukVMxXeO6T1wSbVDNL">
+<input name='next' type='hidden' value=''>
+<div class='field has-addons'>
+<div class='control has-icons-left is-expanded'>
+<div class='select is-fullwidth'>
+<select name='language'>
+<option value="en" selected>English</option>
+<option value="de">Deutsch</option>
+</select>
+</div>
+<div class='icon is-small is-left'>
+<i class='fa fa-flag'></i>
+</div>
+</div>
+<div class='control'>
+<input type='submit' value='Go' class='button'>
+</div>
+</div>
+</form>
+<div class='is-size-7 has-text-grey'>
+<i class='fa fa-exclamation-triangle'></i>
+<span>
+translating CODOH is an ongoing effort. If you think you can help, please <a href="/contact-us/">contact us</a> or visit our <a href="/donate/">donation page.</a>
+</span>
+</div>
+</div>
+</section>
+<section class='tile'>
+<div style='width: 100%' id='newsletter'>
+<div class='menu-label'>
+The CODOH Newsletter
+</div>
+<div>
+<form name='ccoptin' action='http://visitor.r20.constantcontact.com/d.jsp' target='_blank' method='post'>
+<input type='hidden' name='llr' value='r7gj9deab'>
+<input type='hidden' name='m' value='1103934823313'>
+<input type='hidden' name='p' value='oi'>
+<div class='field has-addons'>
+<div style='align-self: stretch; flex: 1' class='control'>
+<input type='text' name='ea' placeholder='Email' class='input'>
+</div>
+<div class='control'>
+<input type='submit' name='go' value='Go' class='button'>
+</div>
+</div>
+</form>
+
+<div align="center" style="padding-top:5px;">
+<img src="https://imgssl.constantcontact.com/ui/images1/safe_subscribe_logo.gif" border="0" width="168" height="14" alt=""></div>
+
+
+<div align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">
+For <a href="http://www.constantcontact.com/jmml/email-newsletter.jsp" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;" target="_blank" rel="nofollow" class="ext">Email Newsletters<span class="ext"></span></a> you can trust
+</div>
+
+</div>
+</div>
+<hr>
+</section>
+<section>
+<div class='menu-label'>
+Contribute
+</div>
+<div style='width: 100%' id='donate'>
+<a href='/donate/' title='Instant credit card donation. Only CC#, exp. date and card code are required!' class='button has-shadow is-primary is-fullwidth'>Donate Now!</a>
+<div class='has-text-centered'>
+<a href='/volunteer/' target='_new' class='is-hidden-mobile is-hidden-tablet-only is-size-7'>
+other ways to contribute&nbsp;&raquo;
+</a>
+</div>
+</div>
+<hr>
+</section>
+<section class='tile'>
+<div style='width: 100%' id='popular-items'>
+<div class='menu-label'>
+Popular items
+</div>
+<div>
+<ul class='menu-list'>
+<li>
+<a href='/library/series/1036/' title='Frequently asked questions' class='navbar-item '>
+<span>
+Frequently asked questions
+</span>
+</a>
+</li>
+<li>
+<a href='/library/videos' title='Videos' class='navbar-item '>
+<span>
+Videos
+</span>
+</a>
+</li>
+<li>
+<a href='/library/categories/1165/' title='Auditory' class='navbar-item '>
+<span>
+Auditory
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section class='tile'>
+<div style='width: 100%' id='featured-documents'>
+<div class='menu-label'>
+Featured documents
+</div>
+<div id='featured-documents-pajax'>
+<div id='slides-featured-documents'>
+<div class='has-text-centered'>
+<div class='fa fa-spinner fa-pulse fa-fw'></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class='tile' id='search-the-library'>
+<div style='width: 100%'>
+<div class='menu-label'>
+Search the Library
+</div>
+<div id='search_by'>
+<section id='search_by_advanced'>
+<div>
+<a href='/search/'>
+<div class='fa fa-fw fa-search'></div>
+Advanced Search
+</a>
+</div>
+</section>
+</div>
+<div id='accordion'>
+<h3>
+<div class='fa fa-fw fa-tags'></div>
+By Categories
+</h3>
+<div id='cat_tree'>
+<div class='has-text-centered'>
+<div class='fa fa-spinner fa-pulse fa-fw'></div>
+</div>
+</div>
+<h3>
+<div class='fa fa-fw fa-user'></div>
+By Authors
+</h3>
+<div style='display: none;' id='by_authors'>
+<div class='has-text-centered'>
+<div class='fa fa-spinner fa-pulse fa-fw'></div>
+</div>
+</div>
+<h3>
+<div class='fa fa-fw fa-newspaper-o'></div>
+For News Items
+</h3>
+<div style='display: none;' id='by_news'>
+<div class='has-text-centered'>
+<div class='fa fa-spinner fa-pulse fa-fw'></div>
+</div>
+</div>
+<h3>
+<div class='fa fa-fw fa-calendar'></div>
+By Posting Date
+</h3>
+<div style='display: none;' id='by_posting_date'>
+<div class='has-text-centered'>
+<div class='fa fa-spinner fa-pulse fa-fw'></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</aside>
+<div class="column" style="overflow: hidden">
+<section style="position: relative">
+<h1 class="title">
+</h1>
+<div>
+<div class="main-content">
+<div id="search-loading" class="has-text-centered is-size-3">
+<br />
+<i class="loading-spinner fa fa-spinner fa-spin"></i>
+</div>
+<div id="search-container" style="display: none">
+<form id="search-form" class="search" action="" method="GET">
+<div class="field has-addons is-horizontal">
+<div class="control is-fullwidth is-expanded">
+<input type="text" name="q" value="the einsatzgruppen" placeholder="Search" maxlength="255" class="input" id="id_q">
+</div>
+<div class="control">
+<div class="select">
+<select name="sort" id="id_sort">
+<option value="relevance">Most relevant</option>
+</select>
+</div>
+</div>
+<div class="control">
+<button id="submit-button" class="button is-primary" type="submit">
+Search
+</button>
+</div>
+</div>
+<div class="field">
+<div class="control">
+<span id="select-languages" class="select2 is-fullwidth">
+<select name="languages" id="id_languages" multiple>
+<option value="en">English</option>
+<option value="de">German</option>
+<option value="it">Italian</option>
+<option value="pl">Polish</option>
+<option value="es">Spanish</option>
+<option value="fr">French</option>
+<option value="tr">Turkish</option>
+<option value="pt">Portuguese</option>
+</select>
+</span>
+</div>
+</div>
+<div class="field">
+<div class="control">
+<span id="select-categories" class="select2 is-fullwidth">
+<select name="categories" id="id_categories" multiple>
+<option value="856">About Revisionism and Historiography</option>
+<option value="857">Ancient/Archeological</option>
+<option value="858">Medieval (before 1500)</option>
+<option value="859">Classic (1500-ca. 1900)</option>
+<option value="860">Modern (&gt;1900)</option>
+<option value="861">US History</option>
+<option value="862">Civil War</option>
+<option value="863">9/11 and aftermath</option>
+<option value="864">World War I</option>
+<option value="865">Prelude</option>
+<option value="866">Conduct</option>
+<option value="867">Russian Revolution</option>
+<option value="868">Crimes and Propaganda</option>
+<option value="869">&quot;Peace Treaties&quot;</option>
+<option value="870">Between the Wars</option>
+<option value="871">Soviet Union</option>
+<option value="872">USA</option>
+<option value="873">Weimar Germany</option>
+<option value="874">Others</option>
+<option value="875">Third Reich Era</option>
+<option value="876">Events</option>
+<option value="877">Reichstagsbrand</option>
+<option value="878">Economy, Culture, Science + Technology</option>
+<option value="879">Sudetenland</option>
+<option value="880">Röhm Putsch</option>
+<option value="881">Persecution of Jews</option>
+<option value="882">Resistance</option>
+<option value="883">Kristallnacht Pogrom</option>
+<option value="884">Emigration</option>
+<option value="885">Organizations</option>
+<option value="886">Personalities</option>
+<option value="887">Goebbels, Joseph</option>
+<option value="888">Hess, Rudolf</option>
+<option value="889">Himmler, Heinrich</option>
+<option value="890">Hitler, Adolf</option>
+<option value="891">Others</option>
+<option value="892">Wehrmacht</option>
+<option value="893">World War II</option>
+<option value="894">Prelude</option>
+<option value="895">Poland</option>
+<option value="896">Rest of Europe (w/o USSR)</option>
+<option value="897">USSR</option>
+<option value="898">USA/Japan</option>
+<option value="899">Conduct</option>
+<option value="900">Europe, West</option>
+<option value="901">Europe, East</option>
+<option value="902">Germany</option>
+<option value="903">Asia/Pacific</option>
+<option value="904">Personalities</option>
+<option value="905">Wartime Trials</option>
+<option value="906">Crimes (non-Holocaust)</option>
+<option value="907">Propaganda</option>
+<option value="908">Guernica</option>
+<option value="909">Allied Concentration Camps</option>
+<option value="910">Bombing + Air Raid Defense</option>
+<option value="911">Allied War Crimes in General</option>
+<option value="912">Hiroshima + Nagasaki</option>
+<option value="913">Malmedy</option>
+<option value="914">Oradour</option>
+<option value="915">Katyn, Vynnytsia etc.</option>
+<option value="916">Prisoners of War</option>
+<option value="917">Crimes against Wehrmacht</option>
+<option value="918">Ethnic Cleansing in Poland</option>
+<option value="919">Partisan Warfare</option>
+<option value="920">Medical Experiments</option>
+<option value="921">Soap, Skin, Bones, Heads</option>
+<option value="922">Euthanasia</option>
+<option value="923">Other</option>
+<option value="924">Holocaust + Final Solution</option>
+<option value="925">Holocaust Revisionism</option>
+<option value="926">Self-Perception</option>
+<option value="927">Orthodox View</option>
+<option value="928">Introductions</option>
+<option value="929">Revisionist</option>
+<option value="930">Answer Man</option>
+<option value="931">Exterminationist</option>
+<option value="932">Camps</option>
+<option value="933">Auschwitz</option>
+<option value="934">Belzec</option>
+<option value="935">Bergen-Belsen</option>
+<option value="936">Buchenwald</option>
+<option value="937">Chelmno/Kulmhof</option>
+<option value="938">Dachau</option>
+<option value="939">Hartheim</option>
+<option value="940">Klooga</option>
+<option value="941">Majdanek</option>
+<option value="942">Mauthausen</option>
+<option value="943">Neuengamme</option>
+<option value="944">Nordhausen-Dora</option>
+<option value="945">Plaszow</option>
+<option value="946">Sachsenhausen</option>
+<option value="947">Sobibor</option>
+<option value="948">Stutthof</option>
+<option value="949">Treblinka</option>
+<option value="950">Others</option>
+<option value="951">Orthodoxy Criticized</option>
+<option value="952">Goldhagen, Daniel</option>
+<option value="953">Lipstadt, Deborah</option>
+<option value="954">van Pelt, Robert J.</option>
+<option value="955">Markiewicz, Jan et al. (Krakow)</option>
+<option value="956">Meyer, Fritjof</option>
+<option value="957">Green, Richard J.</option>
+<option value="958">Pressac, Jean-Claude</option>
+<option value="959">Hilberg, Raul</option>
+<option value="960">Shermer, Michael</option>
+<option value="961">Browning, Christopher</option>
+<option value="962">Others</option>
+<option value="963">Deportation + Resettlement</option>
+<option value="964">Documents + Critique</option>
+<option value="965">Einsatzgruppen (Shootings)</option>
+<option value="966">Forced Labor + Exploitation</option>
+<option value="967">Forensic Research</option>
+<option value="968">Ghettos</option>
+<option value="969">Lies + Propaganda</option>
+<option value="970">Minorities (non-Jewish)</option>
+<option value="971">Statistics + Demography</option>
+<option value="972">Techniques</option>
+<option value="973">Crematories and Cremations</option>
+<option value="974">Killing Methods</option>
+<option value="975">Gas Vans</option>
+<option value="976">Gas Chambers</option>
+<option value="977">HCN (Zyklon B)</option>
+<option value="978">Carbon Monoxide</option>
+<option value="979">Shootings</option>
+<option value="980">Others</option>
+<option value="981">Delousing + Disinfestation</option>
+<option value="982">Others</option>
+<option value="983">Living Conditions</option>
+<option value="984">Witnesses</option>
+<option value="985">Perpetrators</option>
+<option value="986">Victims</option>
+<option value="987">Others</option>
+<option value="988">Wehrmacht + Holocaust</option>
+<option value="989">Expropriations + Looting</option>
+<option value="990">Aktion Reinhardt</option>
+<option value="991">Psychology</option>
+<option value="992">Wartime Reactions</option>
+<option value="993">&quot;Code Language&quot;</option>
+<option value="994">Revisionist Breakthroughs</option>
+<option value="995">France</option>
+<option value="996">Germany</option>
+<option value="997">Japan</option>
+<option value="998">Russia</option>
+<option value="999">USA</option>
+<option value="1000">Others</option>
+<option value="1001">Miscellaneous</option>
+<option value="1002">Revisionist</option>
+<option value="1003">Exterminationist</option>
+<option value="1004">Post WWII Revisionism</option>
+<option value="1005">Crimes and Propaganda</option>
+<option value="1006">Deprivation, Ethnic Cleansing and (Mass) Murder</option>
+<option value="1007">Allied Concentration Camps</option>
+<option value="1008">Annexation</option>
+<option value="1009">Looting</option>
+<option value="1010">Forced Labor, Deportation</option>
+<option value="1011">Re-Education</option>
+<option value="1012">War Crime Trials + Prosecutions</option>
+<option value="1013">IMT + NMTs</option>
+<option value="1014">Individual Allied Trials in Germany</option>
+<option value="1015">Trials against Japanese</option>
+<option value="1016">German Trials</option>
+<option value="1017">Israeli Trials</option>
+<option value="1018">Other Trials + Prosecutions</option>
+<option value="1019">Torture and Abuse</option>
+<option value="1020">Propaganda</option>
+<option value="1021">Reparation and Reconciliation</option>
+<option value="1022">Cold War</option>
+<option value="1023">Coming to Terms with the Past</option>
+<option value="1024">Shoah Business</option>
+<option value="1025">Other</option>
+<option value="1026">(No) Freedom of Expression</option>
+<option value="1027">Free Speech + Censorship</option>
+<option value="1028">Internet</option>
+<option value="1029">Argentina</option>
+<option value="1030">Australia</option>
+<option value="1031">Austria</option>
+<option value="1032">Belgium</option>
+<option value="1033">Canada</option>
+<option value="1034">European Union</option>
+<option value="1035">France</option>
+<option value="1036">Germany</option>
+<option value="1037">Great Britain</option>
+<option value="1038">Italy</option>
+<option value="1039">Netherlands</option>
+<option value="1040">Poland</option>
+<option value="1041">South Africa</option>
+<option value="1042">Spain</option>
+<option value="1043">Sweden</option>
+<option value="1044">Switzerland</option>
+<option value="1045">United States of America</option>
+<option value="1046">Others</option>
+<option value="1047">Persecution of Dissidents</option>
+<option value="1048">Argentina</option>
+<option value="1049">Australia</option>
+<option value="1050">Austria</option>
+<option value="1051">Belgium</option>
+<option value="1052">Canada</option>
+<option value="1053">European Union</option>
+<option value="1054">France</option>
+<option value="1055">Germany</option>
+<option value="1056">Great Britain</option>
+<option value="1057">Italy</option>
+<option value="1058">Netherlands</option>
+<option value="1059">Poland</option>
+<option value="1060">South Africa</option>
+<option value="1061">Spain</option>
+<option value="1062">Sweden</option>
+<option value="1063">Switzerland</option>
+<option value="1064">United States of America</option>
+<option value="1065">Others</option>
+<option value="1066">Prosecution of Dissidents</option>
+<option value="1067">Argentina</option>
+<option value="1068">Australia</option>
+<option value="1069">Austria</option>
+<option value="1070">Belgium</option>
+<option value="1071">Canada</option>
+<option value="1072">European Union</option>
+<option value="1073">France</option>
+<option value="1074">Germany</option>
+<option value="1075">Great Britain</option>
+<option value="1076">Italy</option>
+<option value="1077">Netherlands</option>
+<option value="1078">Poland</option>
+<option value="1079">South Africa</option>
+<option value="1080">Spain</option>
+<option value="1081">Sweden</option>
+<option value="1082">Switzerland</option>
+<option value="1083">USA</option>
+<option value="1084">Others</option>
+<option value="1085">Judaica</option>
+<option value="1086">Anti-Semitism</option>
+<option value="1087">Jewish History</option>
+<option value="1088">Jewish Power + Influence</option>
+<option value="1089">Jewish Religion</option>
+<option value="1090">Torah</option>
+<option value="1091">Talmud</option>
+<option value="1092">Schulchan Aruch</option>
+<option value="1093">Modern Israel, non-historical</option>
+<option value="1094">Non-Israeli Zionism</option>
+<option value="1095">Palestine/Middle East</option>
+<option value="1096">Revisionist Personalities</option>
+<option value="1097">App, Austin J.</option>
+<option value="1098">Bardèche, Maurice</option>
+<option value="1099">Barnes, Harry Elmer</option>
+<option value="1100">Berg, Friedrich Paul</option>
+<option value="1101">Butz, Arthur R.</option>
+<option value="1102">Christophersen, Thies</option>
+<option value="1103">Cole, David</option>
+<option value="1104">Faurisson, Robert</option>
+<option value="1105">Garaudy, Roger</option>
+<option value="1106">Graf, Jürgen</option>
+<option value="1107">Hoggan, David L.</option>
+<option value="1108">Irving, David</option>
+<option value="1109">Kues, Thomas</option>
+<option value="1110">Leuchter, Fred A.</option>
+<option value="1111">Martin, James J.</option>
+<option value="1112">Mattogno, Carlo</option>
+<option value="1113">O’Keefe, Theodore</option>
+<option value="1114">Plantin, Jean</option>
+<option value="1115">Porter, Carlos W.</option>
+<option value="1116">Rassinier, Paul</option>
+<option value="1117">Reynouard, Vicent</option>
+<option value="1118">Roques, Henri</option>
+<option value="1119">Rudolf, Germar</option>
+<option value="1120">Shamir, Israel</option>
+<option value="1121">Scheidl, Franz J.</option>
+<option value="1122">Smith, Bradley R.</option>
+<option value="1123">Stäglich, Wilhelm</option>
+<option value="1124">Theil, Georges</option>
+<option value="1125">Thion, Serge</option>
+<option value="1126">Töben, Fredrick</option>
+<option value="1127">Verbeke, Siegfried</option>
+<option value="1128">Walendy, Udo</option>
+<option value="1129">Weber, Mark</option>
+<option value="1130">Zündel, Ernst</option>
+<option value="1131">Others</option>
+<option value="1132">Organizations</option>
+<option value="1133">Revisionist</option>
+<option value="1134">Conferences and Events</option>
+<option value="1135">Exterminationist</option>
+<option value="1136">Others</option>
+<option value="1137">News</option>
+<option value="1138">Reviews</option>
+<option value="1139">Books</option>
+<option value="1140">Journals/Articles</option>
+<option value="1141">Audio</option>
+<option value="1142">Videos/Plays</option>
+<option value="1143">Helping CODOH</option>
+<option value="1144">Financial</option>
+<option value="1145">Volunteer</option>
+<option value="1146">Data Entry</option>
+<option value="1147">Editing + Proofing</option>
+<option value="1148">Public Relations + Promotion</option>
+<option value="1149">Research + Writing</option>
+<option value="1150">Review books, movies, journals</option>
+<option value="1151">Translations</option>
+<option value="1152">Website Maintenance</option>
+<option value="1153">Outreach</option>
+<option value="1154">Advertisements</option>
+<option value="1155">Campus Project</option>
+<option value="1156">Links</option>
+<option value="1157">Media Events</option>
+<option value="1158">Downloads</option>
+<option value="1159">Books</option>
+<option value="1160">English</option>
+<option value="1161">German</option>
+<option value="1162">French</option>
+<option value="1163">Italian</option>
+<option value="1164">Spanish</option>
+<option value="1165">Audios</option>
+<option value="1166">Videos</option>
+<option value="1167">Documentaries</option>
+<option value="1168">Chats + Interviews</option>
+<option value="1169">Effects</option>
+<option value="1170">Taboo</option>
+<option value="1171">Religion</option>
+<option value="1172">Middle East</option>
+<option value="1173">War</option>
+<option value="1174">Society</option>
+<option value="1175">Politics</option>
+<option value="1176">Periodicals</option>
+<option value="1177">English</option>
+<option value="1178">The Revisionist</option>
+<option value="1179">The Revisionist &gt; 1999/2000</option>
+<option value="1180">The Revisionist &gt; 1999/2000 &gt; No. 1</option>
+<option value="1181">The Revisionist &gt; 1999/2000 &gt; No. 2</option>
+<option value="1182">The Revisionist &gt; 1999/2000 &gt; No. 3</option>
+<option value="1183">The Revisionist &gt; 1999/2000 &gt; No. 4</option>
+<option value="1184">The Revisionist &gt; 2001</option>
+<option value="1185">The Revisionist &gt; 2001 &gt; No. 5</option>
+<option value="1186">The Revisionist &gt; 2001 &gt; No. 6</option>
+<option value="1187">The Revisionist &gt; 2001 &gt; No. 7</option>
+<option value="1188">The Revisionist &gt; 2001 &gt; No. 8</option>
+<option value="1189">The Revisionist &gt; 2002</option>
+<option value="1190">The Revisionist &gt; 2002 &gt; No. 9</option>
+<option value="1191">The Revisionist &gt; 2002 &gt; No. 10</option>
+<option value="1192">The Revisionist &gt; 2002 &gt; No. 11</option>
+<option value="1193">The Revisionist &gt; 2002 &gt; No. 12</option>
+<option value="1194">The Revisionist &gt; 2003</option>
+<option value="1195">The Revisionist &gt; 2003 &gt; No. 1</option>
+<option value="1196">The Revisionist &gt; 2003 &gt; No. 2</option>
+<option value="1197">The Revisionist &gt; 2003 &gt; No. 3</option>
+<option value="1198">The Revisionist &gt; 2003 &gt; No. 4</option>
+<option value="1199">The Revisionist &gt; 2004</option>
+<option value="1200">The Revisionist &gt; 2004 &gt; No. 1</option>
+<option value="1201">The Revisionist &gt; 2004 &gt; No. 2</option>
+<option value="1202">The Revisionist &gt; 2004 &gt; No. 3</option>
+<option value="1203">The Revisionist &gt; 2004 &gt; No. 4</option>
+<option value="1204">The Revisionist &gt; 2005</option>
+<option value="1205">The Revisionist &gt; 2005 &gt; No. 1</option>
+<option value="1206">Journal of Historical Review</option>
+<option value="1207">Journal of Historical Review &gt; Vol. 1 (1980)</option>
+<option value="1208">Journal of Historical Review &gt; Vol. 1 (1980) &gt; No. 1</option>
+<option value="1209">Journal of Historical Review &gt; Vol. 1 (1980) &gt; No. 2</option>
+<option value="1210">Journal of Historical Review &gt; Vol. 1 (1980) &gt; No. 3</option>
+<option value="1211">Journal of Historical Review &gt; Vol. 1 (1980) &gt; No. 4</option>
+<option value="1212">Journal of Historical Review &gt; Vol. 2 (1981)</option>
+<option value="1213">Journal of Historical Review &gt; Vol. 2 (1981) &gt; No. 1</option>
+<option value="1214">Journal of Historical Review &gt; Vol. 2 (1981) &gt; No. 2</option>
+<option value="1215">Journal of Historical Review &gt; Vol. 2 (1981) &gt; No. 3</option>
+<option value="1216">Journal of Historical Review &gt; Vol. 2 (1981) &gt; No. 4</option>
+<option value="1217">Journal of Historical Review &gt; Vol. 3 (1982)</option>
+<option value="1218">Journal of Historical Review &gt; Vol. 3 (1982) &gt; No. 1</option>
+<option value="1219">Journal of Historical Review &gt; Vol. 3 (1982) &gt; No. 2</option>
+<option value="1220">Journal of Historical Review &gt; Vol. 3 (1982) &gt; No. 3</option>
+<option value="1221">Journal of Historical Review &gt; Vol. 4 (1983)</option>
+<option value="1222">Journal of Historical Review &gt; Vol. 4 (1983) &gt; No. 1</option>
+<option value="1223">Journal of Historical Review &gt; Vol. 4 (1983) &gt; No. 2</option>
+<option value="1224">Journal of Historical Review &gt; Vol. 4 (1983) &gt; No. 3</option>
+<option value="1225">Journal of Historical Review &gt; Vol. 4 (1983) &gt; No. 4</option>
+<option value="1226">Journal of Historical Review &gt; Vol. 5 (1984)</option>
+<option value="1227">Journal of Historical Review &gt; Vol. 5 (1984) &gt; No. 1</option>
+<option value="1228">Journal of Historical Review &gt; Vol. 5 (1984) &gt; No. 2-4</option>
+<option value="1229">Journal of Historical Review &gt; Vol. 6 (1985)</option>
+<option value="1230">Journal of Historical Review &gt; Vol. 6 (1985) &gt; No. 1</option>
+<option value="1231">Journal of Historical Review &gt; Vol. 6 (1985) &gt; No. 2</option>
+<option value="1232">Journal of Historical Review &gt; Vol. 6 (1985) &gt; No. 3</option>
+<option value="1233">Journal of Historical Review &gt; Vol. 6 (1985) &gt; No. 4</option>
+<option value="1234">Journal of Historical Review &gt; Vol. 7 (1986)</option>
+<option value="1235">Journal of Historical Review &gt; Vol. 7 (1986) &gt; No. 1</option>
+<option value="1236">Journal of Historical Review &gt; Vol. 7 (1986) &gt; No. 2</option>
+<option value="1237">Journal of Historical Review &gt; Vol. 7 (1986) &gt; No. 3</option>
+<option value="1238">Journal of Historical Review &gt; Vol. 7 (1986) &gt; No. 4</option>
+<option value="1239">Journal of Historical Review &gt; Vol. 8 (1988)</option>
+<option value="1240">Journal of Historical Review &gt; Vol. 8 (1988) &gt; No. 1</option>
+<option value="1241">Journal of Historical Review &gt; Vol. 8 (1988) &gt; No. 2</option>
+<option value="1242">Journal of Historical Review &gt; Vol. 8 (1988) &gt; No. 3</option>
+<option value="1243">Journal of Historical Review &gt; Vol. 8 (1988) &gt; No. 4</option>
+<option value="1244">Journal of Historical Review &gt; Vol. 9 (1989)</option>
+<option value="1245">Journal of Historical Review &gt; Vol. 9 (1989) &gt; No. 1</option>
+<option value="1246">Journal of Historical Review &gt; Vol. 9 (1989) &gt; No. 2</option>
+<option value="1247">Journal of Historical Review &gt; Vol. 9 (1989) &gt; No. 3</option>
+<option value="1248">Journal of Historical Review &gt; Vol. 9 (1989) &gt; No. 4</option>
+<option value="1249">Journal of Historical Review &gt; Vol. 10 (1990)</option>
+<option value="1250">Journal of Historical Review &gt; Vol. 10 (1990) &gt; No. 1</option>
+<option value="1251">Journal of Historical Review &gt; Vol. 10 (1990) &gt; No. 2</option>
+<option value="1252">Journal of Historical Review &gt; Vol. 10 (1990) &gt; No. 3</option>
+<option value="1253">Journal of Historical Review &gt; Vol. 10 (1990) &gt; No. 4</option>
+<option value="1254">Journal of Historical Review &gt; Vol. 11 (1991)</option>
+<option value="1255">Journal of Historical Review &gt; Vol. 11 (1991) &gt; No. 1</option>
+<option value="1256">Journal of Historical Review &gt; Vol. 11 (1991) &gt; No. 2</option>
+<option value="1257">Journal of Historical Review &gt; Vol. 11 (1991) &gt; No. 3</option>
+<option value="1258">Journal of Historical Review &gt; Vol. 11 (1991) &gt; No. 4</option>
+<option value="1259">Journal of Historical Review &gt; Vol. 12 (1992)</option>
+<option value="1260">Journal of Historical Review &gt; Vol. 12 (1992) &gt; No. 1</option>
+<option value="1261">Journal of Historical Review &gt; Vol. 12 (1992) &gt; No. 2</option>
+<option value="1262">Journal of Historical Review &gt; Vol. 12 (1992) &gt; No. 3</option>
+<option value="1263">Journal of Historical Review &gt; Vol. 12 (1992) &gt; No. 4</option>
+<option value="1264">Journal of Historical Review &gt; Vol. 13 (1993)</option>
+<option value="1265">Journal of Historical Review &gt; Vol. 13 (1993) &gt; No. 1</option>
+<option value="1266">Journal of Historical Review &gt; Vol. 13 (1993) &gt; No. 2</option>
+<option value="1267">Journal of Historical Review &gt; Vol. 13 (1993) &gt; No. 3</option>
+<option value="1268">Journal of Historical Review &gt; Vol. 13 (1993) &gt; No. 4</option>
+<option value="1269">Journal of Historical Review &gt; Vol. 13 (1993) &gt; No. 5</option>
+<option value="1270">Journal of Historical Review &gt; Vol. 13 (1993) &gt; No. 6</option>
+<option value="1271">Journal of Historical Review &gt; Vol. 14 (1994)</option>
+<option value="1272">Journal of Historical Review &gt; Vol. 14 (1994) &gt; No. 1</option>
+<option value="1273">Journal of Historical Review &gt; Vol. 14 (1994) &gt; No. 2</option>
+<option value="1274">Journal of Historical Review &gt; Vol. 14 (1994) &gt; No. 3</option>
+<option value="1275">Journal of Historical Review &gt; Vol. 14 (1994) &gt; No. 4</option>
+<option value="1276">Journal of Historical Review &gt; Vol. 14 (1994) &gt; No. 5</option>
+<option value="1277">Journal of Historical Review &gt; Vol. 14 (1994) &gt; No. 6</option>
+<option value="1278">Journal of Historical Review &gt; Vol. 15 (1995)</option>
+<option value="1279">Journal of Historical Review &gt; Vol. 15 (1995) &gt; No. 1</option>
+<option value="1280">Journal of Historical Review &gt; Vol. 15 (1995) &gt; No. 2</option>
+<option value="1281">Journal of Historical Review &gt; Vol. 15 (1995) &gt; No. 3</option>
+<option value="1282">Journal of Historical Review &gt; Vol. 15 (1995) &gt; No. 4</option>
+<option value="1283">Journal of Historical Review &gt; Vol. 15 (1995) &gt; No. 5</option>
+<option value="1284">Journal of Historical Review &gt; Vol. 15 (1995) &gt; No. 6</option>
+<option value="1285">Journal of Historical Review &gt; Vol. 16 (1996/97)</option>
+<option value="1286">Journal of Historical Review &gt; Vol. 16 (1996/97) &gt; No. 1</option>
+<option value="1287">Journal of Historical Review &gt; Vol. 16 (1996/97) &gt; No. 2</option>
+<option value="1288">Journal of Historical Review &gt; Vol. 16 (1996/97) &gt; No. 3</option>
+<option value="1289">Journal of Historical Review &gt; Vol. 16 (1996/97) &gt; No. 4</option>
+<option value="1290">Journal of Historical Review &gt; Vol. 16 (1996/97) &gt; No. 5</option>
+<option value="1291">Journal of Historical Review &gt; Vol. 16 (1996/97) &gt; No. 6</option>
+<option value="1292">Journal of Historical Review &gt; Vol. 17 (1998)</option>
+<option value="1293">Journal of Historical Review &gt; Vol. 17 (1998) &gt; No. 1</option>
+<option value="1294">Journal of Historical Review &gt; Vol. 17 (1998) &gt; No. 2</option>
+<option value="1295">Journal of Historical Review &gt; Vol. 17 (1998) &gt; No. 3</option>
+<option value="1296">Journal of Historical Review &gt; Vol. 17 (1998) &gt; No. 4</option>
+<option value="1297">Journal of Historical Review &gt; Vol. 17 (1998) &gt; No. 5</option>
+<option value="1298">Journal of Historical Review &gt; Vol. 17 (1998) &gt; No. 6</option>
+<option value="1299">Journal of Historical Review &gt; Vol. 18 (1999)</option>
+<option value="1300">Journal of Historical Review &gt; Vol. 18 (1999) &gt; No. 1</option>
+<option value="1301">Journal of Historical Review &gt; Vol. 18 (1999) &gt; No. 2</option>
+<option value="1302">Journal of Historical Review &gt; Vol. 18 (1999) &gt; No. 3</option>
+<option value="1303">Journal of Historical Review &gt; Vol. 18 (1999) &gt; No. 4</option>
+<option value="1304">Journal of Historical Review &gt; Vol. 18 (1999) &gt; No. 5+6</option>
+<option value="1305">Journal of Historical Review &gt; Vol. 19 (2000)</option>
+<option value="1306">Journal of Historical Review &gt; Vol. 19 (2000) &gt; No. 1</option>
+<option value="1307">Journal of Historical Review &gt; Vol. 19 (2000) &gt; No. 2</option>
+<option value="1308">Journal of Historical Review &gt; Vol. 19 (2000) &gt; No. 3</option>
+<option value="1309">Journal of Historical Review &gt; Vol. 19 (2000) &gt; No. 4</option>
+<option value="1310">Journal of Historical Review &gt; Vol. 19 (2000) &gt; No. 5</option>
+<option value="1311">Journal of Historical Review &gt; Vol. 19 (2000) &gt; No. 6</option>
+<option value="1312">Journal of Historical Review &gt; Vol. 20 (2001)</option>
+<option value="1313">Journal of Historical Review &gt; Vol. 20 (2001) &gt; No. 1</option>
+<option value="1314">Journal of Historical Review &gt; Vol. 20 (2001) &gt; No. 2</option>
+<option value="1315">Journal of Historical Review &gt; Vol. 20 (2001) &gt; No. 3</option>
+<option value="1316">Journal of Historical Review &gt; Vol. 20 (2001) &gt; No. 4</option>
+<option value="1317">Journal of Historical Review &gt; Vol. 20 (2001) &gt; No. 5+6</option>
+<option value="1318">Journal of Historical Review &gt; Vol. 21 (2002)</option>
+<option value="1319">Journal of Historical Review &gt; Vol. 21 (2002) &gt; No. 1</option>
+<option value="1320">Journal of Historical Review &gt; Vol. 21 (2002) &gt; No. 2</option>
+<option value="1321">Journal of Historical Review &gt; Vol. 21 (2002) &gt; No. 3+4</option>
+<option value="1322">Inconvenient History</option>
+<option value="1323">Inconvenient History &gt; Vol. 1 (2009)</option>
+<option value="1324">Inconvenient History &gt; Vol. 1 (2009) &gt; No. 1</option>
+<option value="1325">Inconvenient History &gt; Vol. 1 (2009) &gt; No. 2</option>
+<option value="1326">Inconvenient History &gt; Vol. 1 (2009) &gt; No. 3</option>
+<option value="1327">Inconvenient History &gt; Vol. 2 (2010)</option>
+<option value="1328">Inconvenient History &gt; Vol. 2 (2010) &gt; No. 1</option>
+<option value="1329">Inconvenient History &gt; Vol. 2 (2010) &gt; No. 2</option>
+<option value="1330">Inconvenient History &gt; Vol. 2 (2010) &gt; No. 3</option>
+<option value="1331">Inconvenient History &gt; Vol. 3 (2011)</option>
+<option value="1332">Inconvenient History &gt; Vol. 3 (2011) &gt; No. 1</option>
+<option value="1333">Smith&#39;s Report</option>
+<option value="1334">Smith&#39;s Report &gt; 2007</option>
+<option value="1335">Smith&#39;s Report &gt; 2007 &gt; No. 135 (Jan/Feb.)</option>
+<option value="1336">Smith&#39;s Report &gt; 2007 &gt; No. 136 (Mar.)</option>
+<option value="1337">Smith&#39;s Report &gt; 2007 &gt; No. 137 (Apr.)</option>
+<option value="1338">Smith&#39;s Report &gt; 2007 &gt; No. 138 (May)</option>
+<option value="1339">Smith&#39;s Report &gt; 2007 &gt; No. 139 (Jun.)</option>
+<option value="1340">Smith&#39;s Report &gt; 2007 &gt; No. 140 (Jul.)</option>
+<option value="1341">Smith&#39;s Report &gt; 2007 &gt; No. 141 (Aug.)</option>
+<option value="1342">Smith&#39;s Report &gt; 2007 &gt; No. 142 (Sep.)</option>
+<option value="1343">Smith&#39;s Report &gt; 2007 &gt; No. 143 (Oct.)</option>
+<option value="1344">Smith&#39;s Report &gt; 2007 &gt; No. 144 (Nov.)</option>
+<option value="1345">Smith&#39;s Report &gt; 2007 &gt; No. 145 (Dec.)</option>
+<option value="1346">Smith&#39;s Report &gt; 2008</option>
+<option value="1347">Smith&#39;s Report &gt; 2008 &gt; No. 146 (Jan.)</option>
+<option value="1348">Smith&#39;s Report &gt; 2008 &gt; No. 147 (Feb.)</option>
+<option value="1349">Smith&#39;s Report &gt; 2008 &gt; No. 148 (Mar.)</option>
+<option value="1350">Smith&#39;s Report &gt; 2008 &gt; No. 149 (Apr.)</option>
+<option value="1351">Smith&#39;s Report &gt; 2008 &gt; No. 150 (May)</option>
+<option value="1352">Smith&#39;s Report &gt; 2008 &gt; No. 151 (Jun.)</option>
+<option value="1353">Smith&#39;s Report &gt; 2008 &gt; No. 152 (Jul.)</option>
+<option value="1354">Smith&#39;s Report &gt; 2008 &gt; No. 153 (Sep.)</option>
+<option value="1355">Smith&#39;s Report &gt; 2008 &gt; No. 154 (Oct.)</option>
+<option value="1356">Smith&#39;s Report &gt; 2008 &gt; No. 155 (Nov.)</option>
+<option value="1357">Smith&#39;s Report &gt; 2008 &gt; No. 156 (Dec.)</option>
+<option value="1358">Smith&#39;s Report &gt; 2009</option>
+<option value="1359">Smith&#39;s Report &gt; 2009 &gt; No. 157 (Jan.)</option>
+<option value="1360">Smith&#39;s Report &gt; 2009 &gt; No. 158 (Feb.)</option>
+<option value="1361">Smith&#39;s Report &gt; 2009 &gt; No. 159 (Mar.)</option>
+<option value="1362">Smith&#39;s Report &gt; 2009 &gt; No. 160 (Apr.)</option>
+<option value="1363">Smith&#39;s Report &gt; 2009 &gt; No. 161 (May)</option>
+<option value="1364">Smith&#39;s Report &gt; 2009 &gt; No. 162 (Jun.)</option>
+<option value="1365">Smith&#39;s Report &gt; 2009 &gt; No. 163 (Jul.)</option>
+<option value="1366">Smith&#39;s Report &gt; 2009 &gt; No. 164 (Aug.)</option>
+<option value="1367">Smith&#39;s Report &gt; 2009 &gt; No. 165 (Sep.)</option>
+<option value="1368">Smith&#39;s Report &gt; 2009 &gt; No. 166 (Nov.)</option>
+<option value="1369">Smith&#39;s Report &gt; 2009 &gt; No. 167 (Dec.)</option>
+<option value="1370">Smith&#39;s Report &gt; 2010</option>
+<option value="1371">Smith&#39;s Report &gt; 2010 &gt; No. 168 (Jan.)</option>
+<option value="1372">Smith&#39;s Report &gt; 2010 &gt; No. 169 (Feb.)</option>
+<option value="1373">Smith&#39;s Report &gt; 2010 &gt; No. 170 (Mar.)</option>
+<option value="1374">Smith&#39;s Report &gt; 2010 &gt; No. 171 (Apr.)</option>
+<option value="1375">Smith&#39;s Report &gt; 2010 &gt; No. 172 (May)</option>
+<option value="1376">Smith&#39;s Report &gt; 2010 &gt; No. 173 (Jul.)</option>
+<option value="1377">Smith&#39;s Report &gt; 2010 &gt; No. 174 (Aug.)</option>
+<option value="1378">Smith&#39;s Report &gt; 2010 &gt; No. 175 (Sep.)</option>
+<option value="1379">Smith&#39;s Report &gt; 2010 &gt; No. 176 (Nov.)</option>
+<option value="1380">Smith&#39;s Report &gt; 2010 &gt; No. 177 (Dec.)</option>
+<option value="1381">Smith&#39;s Report &gt; 2011</option>
+<option value="1382">Smith&#39;s Report &gt; 2011 &gt; No. 178 (Jan.)</option>
+<option value="1383">Smith&#39;s Report &gt; 2011 &gt; No. 179 (Feb.)</option>
+<option value="1384">Smith&#39;s Report &gt; 2011 &gt; No. 180 (Mar.)</option>
+<option value="1385">Deutsch</option>
+<option value="1386">VffG</option>
+<option value="1387">HT</option>
+<option value="1388">DGG</option>
+<option value="1389">Français</option>
+<option value="1390">Révue d&#39;histoire révisionniste</option>
+<option value="1391">Akribeia</option>
+<option value="1392">Dubitando</option>
+<option value="1393">Others</option>
+<option value="1394">Miscellaneous</option>
+<option value="1395">Letters + Feedback</option>
+<option value="1396">Satire/Humor</option>
+<option value="1397">Prose</option>
+<option value="1398">Editorials</option>
+<option value="1399">Other topics</option>
+<option value="1737">Smith&#39;s Report &gt; 2011 &gt; No. 181 (May)</option>
+<option value="1738">Smith&#39;s Report &gt; 2011 &gt; No. 182 (Jun.)</option>
+<option value="1739">No. 183 (Jul.)</option>
+<option value="1740">Smith&#39;s Report &gt; 2011 &gt; No. 184 (Aug.)</option>
+<option value="1741">Smith&#39;s Report &gt; 2011 &gt; No. 185 (Sep.)</option>
+<option value="1742">Smith&#39;s Report &gt; 2011 &gt; No. 186 (Nov.)</option>
+<option value="1743">Smith&#39;s Report &gt; 2011 &gt; No. 187 (Dec.)</option>
+<option value="1744">Smith&#39;s Report &gt; 2012</option>
+<option value="1745">Smith&#39;s Report &gt; 2012 &gt; No. 188 (Jan.)</option>
+<option value="1746">Smith&#39;s Report &gt; 2012 &gt; No. 189 (Feb.)</option>
+<option value="1747">Smith&#39;s Report &gt; 2012 &gt; No. 190 (Mar.)</option>
+<option value="1748">Smith&#39;s Report &gt; 2012 &gt; No. 191 (May)</option>
+<option value="2007">Science and Pseudo-Science</option>
+<option value="2023">Sans Concession</option>
+<option value="2024">Sans Concession &gt; 2004</option>
+<option value="2025">9</option>
+<option value="2048">Sans Concession &gt; 2005</option>
+<option value="2049">10</option>
+<option value="2051">11</option>
+<option value="2052">12</option>
+<option value="2053">13</option>
+<option value="2054">14</option>
+<option value="2055">15</option>
+<option value="2056">16</option>
+<option value="2057">Sans Concession &gt; 2006</option>
+<option value="2058">18-19</option>
+<option value="2059">20-21</option>
+<option value="2060">Smith&#39;s Report &gt; 1990</option>
+<option value="2061">Smith&#39;s Report &gt; 1990 &gt; No. 1 (Apr./May)</option>
+<option value="2062">Smith&#39;s Report &gt; 1990 &gt; No. 2 (Nov.)</option>
+<option value="2063">Smith&#39;s Report &gt; 1991</option>
+<option value="2064">Smith&#39;s Report &gt; 1991 &gt; No. 3 (Feb.)</option>
+<option value="2065">22</option>
+<option value="2066">23-24</option>
+<option value="2067">Smith&#39;s Report &gt; 1991 &gt; No. 4 (Apr.)</option>
+<option value="2068">Smith&#39;s Report &gt; 1991 &gt; No. 5 (June)</option>
+<option value="2070">25-26</option>
+<option value="2071">Sans Concession &gt; 2007</option>
+<option value="2072">27-29</option>
+<option value="2073">Smith&#39;s Report &gt; 1991 &gt; No. 6 (Aug.)</option>
+<option value="2075">Smith&#39;s Report &gt; 1991 &gt; No. 7 (Oct.)</option>
+<option value="2080">30-32</option>
+<option value="2081">33</option>
+<option value="2082">34</option>
+<option value="2083">35</option>
+<option value="2084">Sans Concession &gt; 2008</option>
+<option value="2085">Sans Concession &gt; 2009</option>
+<option value="2086">Sans Concession &gt; 2010</option>
+<option value="2087">Sans Concession &gt; 2011</option>
+<option value="2088">Sans Concession &gt; 2012</option>
+<option value="2089">36</option>
+<option value="2090">37-39</option>
+<option value="2091">40-41</option>
+<option value="2092">42-45</option>
+<option value="2093">46-47</option>
+<option value="2094">48-52</option>
+<option value="2095">53-54</option>
+<option value="2096">55-57</option>
+<option value="2097">58-60</option>
+<option value="2098">61-64</option>
+<option value="2099">65-66</option>
+<option value="2100">67-70</option>
+<option value="2101">71-74</option>
+<option value="2102">75</option>
+<option value="2103">Prima Facie</option>
+<option value="2104">Prima Facie &gt; 1984</option>
+<option value="2105">Prima Facie &gt; 1984 &gt; #1 (Oct.)</option>
+<option value="2106">Smith&#39;s Report &gt; 1992</option>
+<option value="2107">Smith&#39;s Report &gt; 1993</option>
+<option value="2108">Smith&#39;s Report &gt; 1994</option>
+<option value="2109">Smith&#39;s Report &gt; 1995</option>
+<option value="2110">Smith&#39;s Report &gt; 1996</option>
+<option value="2111">Smith&#39;s Report &gt; 1997</option>
+<option value="2112">Smith&#39;s Report &gt; 1998</option>
+<option value="2113">Smith&#39;s Report &gt; 1992 &gt; No. 9 (Mar.)</option>
+<option value="2114">Smith&#39;s Report &gt; 1992 &gt; No. 10 (July)</option>
+<option value="2115">Smith&#39;s Report &gt; 1992 &gt; No. 12 (Nov./Dec.)</option>
+<option value="2116">Smith&#39;s Report &gt; 1995 &gt; No. 19 (Jan.)</option>
+<option value="2117">Smith&#39;s Report &gt; 1995 &gt; No. 26 (Sep.)</option>
+<option value="2118">Smith&#39;s Report &gt; 1995 &gt; No. 28 (Nov.)</option>
+<option value="2119">Smith&#39;s Report &gt; 1995 &gt; No. 29 (Dec.)</option>
+<option value="2120">Smith&#39;s Report &gt; 1996 &gt; No. 30 (Mar.)</option>
+<option value="2121">Smith&#39;s Report &gt; 1996 &gt; No. 31 (Apr.)</option>
+<option value="2122">Smith&#39;s Report &gt; 1996 &gt; No. 32 (May)</option>
+<option value="2123">Smith&#39;s Report &gt; 1996 &gt; No. 33 (June)</option>
+<option value="2124">Smith&#39;s Report &gt; 1996 &gt; No. 34 (July)</option>
+<option value="2125">Smith&#39;s Report &gt; 1996 &gt; No. 35 (Sep.)</option>
+<option value="2126">Smith&#39;s Report &gt; 1996 &gt; No. 36 (Oct.)</option>
+<option value="2127">Smith&#39;s Report &gt; 1996 &gt; No. 37 (Nov.)</option>
+<option value="2128">Smith&#39;s Report &gt; 1996 &gt; No. 38 (Dec.)</option>
+<option value="2129">Smith&#39;s Report &gt; 1997 &gt; No. 39 (Jan.)</option>
+<option value="2130">Smith&#39;s Report &gt; 1997 &gt; No. 40 (Feb.)</option>
+<option value="2131">Smith&#39;s Report &gt; 1997 &gt; No. 41 (Mar.)</option>
+<option value="2132">Smith&#39;s Report &gt; 1997 &gt; No. 42 (Apr.)</option>
+<option value="2133">Smith&#39;s Report &gt; 1997 &gt; No. 43 (May)</option>
+<option value="2134">Smith&#39;s Report &gt; 1993 &gt; No. 15-16 (Jul./Aug.)</option>
+<option value="2135">Smith&#39;s Report &gt; 1997 &gt; No. 46 (Sep.)</option>
+ <option value="2136">Smith&#39;s Report &gt; 1997 &gt; No. 49 (Dec.)</option>
+<option value="2137">Smith&#39;s Report &gt; 1998 &gt; No. 50 (Jan.)</option>
+<option value="2138">Smith&#39;s Report &gt; 1998 &gt; No. 52 (Mar.)</option>
+<option value="2139">Smith&#39;s Report &gt; 1998 &gt; No. 53 (Apr.)</option>
+<option value="2140">Smith&#39;s Report &gt; 1998 &gt; No. 54 (May)</option>
+<option value="2141">Smith&#39;s Report &gt; 1998 &gt; No. 55 (June)</option>
+<option value="2142">Smith&#39;s Report &gt; 1998 &gt; No. 56 (July)</option>
+<option value="2143">Smith&#39;s Report &gt; 1998 &gt; No. 57 (Sep.)</option>
+<option value="2162">Smith&#39;s Report &gt; 2012 &gt; No. 192 (July)</option>
+<option value="2183">Inconvenient History &gt; Vol. 2 (2010) &gt; No. 4</option>
+<option value="2184">Inconvenient History &gt; Vol. 3 (2011) &gt; No. 2</option>
+<option value="2185">Inconvenient History &gt; Vol. 3 (2011) &gt; No. 3</option>
+<option value="2186">Inconvenient History &gt; Vol. 3 (2011) &gt; No. 4</option>
+<option value="2187">Inconvenient History &gt; Vol. 4 (2012)</option>
+<option value="2188">Inconvenient History &gt; Vol. 4 (2012) &gt; No. 1</option>
+<option value="2189">Inconvenient History &gt; Vol. 4 (2012) &gt; No. 2</option>
+<option value="2212">The Revisionist &gt; 2005 &gt; No. 2</option>
+<option value="2218">The Revisionist &gt; 2002 &gt; No. 13</option>
+<option value="2241">Smith&#39;s Report &gt; 2012 &gt; No. 193 (Sep.)</option>
+<option value="2246">Inconvenient History &gt; Vol. 4 (2012) &gt; No. 3</option>
+<option value="2278">Journal of Historical Review &gt; Vol. 3 (1982) &gt; No. 4</option>
+<option value="2373">History in General</option>
+<option value="2395">Smith&#39;s Report &gt; 2012 &gt; No. 194 (Nov.)</option>
+<option value="2579">Smith&#39;s Report &gt; 2013</option>
+<option value="2580">Smith&#39;s Report &gt; 2013 &gt; No. 195 (Feb.)</option>
+<option value="2665">Smith&#39;s Report &gt; 2013 &gt; No. 196 (June)</option>
+<option value="2677">Smith&#39;s Report &gt; 2013 &gt; No. 197 (July)</option>
+<option value="2680">Smith&#39;s Report &gt; 2013 &gt; No. 198 (August)</option>
+<option value="2686">Smith&#39;s Report &gt; 2013 &gt; No. 199 (October)</option>
+<option value="2703">Smith&#39;s Report &gt; 2013 &gt; No. 200 (November)</option>
+<option value="2712">Smith&#39;s Report &gt; 2013 &gt; No. 201 (December)</option>
+<option value="2714">Inconvenient History &gt; Vol. 4 (2012) &gt; No. 4</option>
+<option value="2716">Smith&#39;s Report &gt; 2014</option>
+<option value="2719">Smith&#39;s Report &gt; 2014 &gt; No. 202 (February)</option>
+<option value="2725">Maly Trostenets</option>
+<option value="2731">Inconvenient History &gt; Vol. 5 (2013)</option>
+<option value="2732">Inconvenient History &gt; Vol. 5 (2013) &gt; No. 1</option>
+<option value="2733">Inconvenient History &gt; Vol. 5 (2013) &gt; No. 2</option>
+<option value="2734">Inconvenient History &gt; Vol. 5 (2013) &gt; No. 3</option>
+<option value="2735">Inconvenient History &gt; Vol. 5 (2013) &gt; No. 4</option>
+<option value="2739">Inconvenient History &gt; Vol. 6 (2014)</option>
+<option value="2740">Inconvenient History &gt; Vol. 6 (2014) &gt; No. 1</option>
+<option value="2768">VffG &gt; Jg. 1 (1997 )</option>
+<option value="2769">VffG &gt; Jg. 1 (1997 ) &gt; Nr. 1</option>
+<option value="2771">Smith&#39;s Report &gt; 2014 &gt; No. 203 (March)</option>
+<option value="2787">Smith&#39;s Report &gt; 2014 &gt; No. 204 (April)</option>
+<option value="2788">Smith&#39;s Report &gt; 2014 &gt; No. 205 (May)</option>
+<option value="2789">Inconvenient History &gt; Vol. 6 (2014) &gt; No. 2</option>
+<option value="2790">Smith&#39;s Report &gt; 2014 &gt; No. 206 (June)</option>
+<option value="2791">Smith&#39;s Report &gt; 2014 &gt; No. 207 (July)</option>
+<option value="2792">Smith&#39;s Report &gt; 2014 &gt; No. 208 (August)</option>
+<option value="2793">Smith&#39;s Report &gt; 2014 &gt; No. 209 (October)</option>
+<option value="2794">Smith&#39;s Report &gt; 2014 &gt; No. 210 (November)</option>
+<option value="2795">Inconvenient History &gt; Vol. 6 (2014) &gt; No. 3</option>
+<option value="2796">Inconvenient History &gt; Vol. 6 (2014) &gt; No. 4</option>
+<option value="2797">Smith&#39;s Report &gt; 2014 &gt; No. 211 (December)</option>
+<option value="2798">Smith&#39;s Report &gt; 2015</option>
+<option value="2799">Smith&#39;s Report &gt; 2015 &gt; No. 212 (February)</option>
+<option value="2800">Smith&#39;s Report &gt; 1992 &gt; No. 11 (Sep./Oct.)</option>
+<option value="2801">Smith&#39;s Report &gt; 1993 &gt; No. 13 (Jan./Feb.)</option>
+<option value="2802">Smith&#39;s Report &gt; 1993 &gt; No. 14 (Mar./Apr.)</option>
+<option value="2803">Smith&#39;s Report &gt; 1995 &gt; No. 20 (Feb.)</option>
+<option value="2804">Inconvenient History &gt; Vol. 7 (2015)</option>
+<option value="2805">Inconvenient History &gt; Vol. 7 (2015) &gt; No. 1</option>
+<option value="2806">Smith&#39;s Report &gt; 2015 &gt; No. 213 (May)</option>
+<option value="2807">Smith&#39;s Report &gt; 2015 &gt; No. 214 (August)</option>
+<option value="2808">Hunt, Eric</option>
+<option value="2809">Smith&#39;s Report &gt; 2003</option>
+<option value="2810">No. 101 (Nov.)</option>
+<option value="2811">Smith&#39;s Report &gt; 1991 &gt; No. 8 (Nov./Dec.)</option>
+<option value="2812">Smith&#39;s Report &gt; 1994 &gt; No. 17 (Spring)</option>
+<option value="2813">Smith&#39;s Report &gt; 1994 &gt; No. 18 (Fall)</option>
+<option value="2814">Inconvenient History &gt; Vol. 7 (2015) &gt; No. 2</option>
+<option value="2815">Inconvenient History &gt; Vol. 7 (2015) &gt; No. 3</option>
+<option value="2816">Smith&#39;s Report &gt; 2015 &gt; No. 215 (September)</option>
+<option value="2817">Smith&#39;s Report &gt; 1995 &gt; No. 21 (Mar.)</option>
+<option value="2818">Struthof-Natzweiler</option>
+<option value="2819">Smith&#39;s Report &gt; 1995 &gt; No. 22 (Apr.)</option>
+<option value="2820">Smith&#39;s Report &gt; 1995 &gt; No. 23 (May)</option>
+<option value="2821">Smith&#39;s Report &gt; 1995 &gt; No. 25 (Aug)</option>
+<option value="2822">Smith&#39;s Report &gt; 1995 &gt; No. 24 (June/July)</option>
+<option value="2823">Smith&#39;s Report &gt; 1995 &gt; No. 27 (Oct)</option>
+<option value="2824">For Sale</option>
+<option value="2825">Smith&#39;s Report &gt; 1997 &gt; No. 44 (June)</option>
+<option value="2826">Smith&#39;s Report &gt; 1997 &gt; No. 45 (July/Aug.)</option>
+<option value="2827">Smith&#39;s Report &gt; 1997 &gt; No. 47 (Oct.)</option>
+<option value="2828">Smith&#39;s Report &gt; 1998 &gt; No. 51 (Feb.)</option>
+<option value="2829">Smith&#39;s Report &gt; 1997 &gt; No. 48 (Nov.)</option>
+<option value="2830">Smith&#39;s Report &gt; 2015 &gt; No. 216 (October)</option>
+<option value="2831">Smith&#39;s Report &gt; 1998 &gt; No. 58 (Oct.)</option>
+<option value="2832">Smith&#39;s Report &gt; 1998 &gt; No. 59 (Nov.)</option>
+<option value="2833">Smith&#39;s Report &gt; 1998 &gt; No. 60 (Dec.)</option>
+<option value="2834">Carto, Willis A.</option>
+<option value="2835">Smith&#39;s Report &gt; 2015 &gt; No. 217 (November)</option>
+<option value="2836">Activities</option>
+<option value="2837">Smith&#39;s Report &gt; 1999</option>
+<option value="2838">Smith&#39;s Report &gt; 1999 &gt; No. 61 (Jan.)</option>
+<option value="2839">Smith&#39;s Report &gt; 1999 &gt; No. 62 (Feb.-Mar.)</option>
+<option value="2840">Smith&#39;s Report &gt; 1999 &gt; No. 63 (April-June)</option>
+<option value="2841">Smith&#39;s Report &gt; 1999 &gt; No. 64 (Aug.)</option>
+<option value="2842">Smith&#39;s Report &gt; 1999 &gt; No. 65 (Nov.)</option>
+<option value="2843">Smith&#39;s Report &gt; 1999 &gt; No. 66 (Dec.)</option>
+<option value="2844">Smith&#39;s Report &gt; 2015 &gt; No. 218 (Dec.)</option>
+<option value="2845">Inconvenient History &gt; Vol. 7 (2015) &gt; No. 4</option>
+<option value="2846">Smith&#39;s Report &gt; 2016</option>
+<option value="2847">Smith&#39;s Report &gt; 2016 &gt; No. 219 (Feb.)</option>
+<option value="2848">Kollerstrom, Nicholas </option>
+<option value="2849">Smith&#39;s Report &gt; 2016 &gt; No. 220 (March)</option>
+<option value="2850">Inconvenient History &gt; Vol. 8 (2016)</option>
+<option value="2851">Inconvenient History &gt; Vol. 8 (2016) &gt; No. 1</option>
+<option value="2852">Inconvenient History &gt; Vol. 8 (2016) &gt; No. 2</option>
+<option value="2853">Inconvenient History &gt; Vol. 8 (2016) &gt; No. 3</option>
+<option value="2854">Inconvenient History &gt; Vol. 8 (2016) &gt; No. 4</option>
+<option value="2855">Inconvenient History &gt; Vol. 9 (2017)</option>
+<option value="2856">Inconvenient History &gt; Vol. 9 (2017) &gt; No. 1</option>
+<option value="2857">Inconvenient History &gt; Vol. 9 (2017) &gt; No. 2</option>
+<option value="2858">Inconvenient History &gt; Vol. 9 (2017) &gt; No. 3</option>
+<option value="2859">Inconvenient History &gt; Vol. 9 (2017) &gt; No. 4</option>
+<option value="2860">Inconvenient History &gt; Vol. 10 (2018)</option>
+<option value="2861">Inconvenient History &gt; Vol. 10 (2018) &gt; No. 1</option>
+<option value="2862">VffG &gt; Jg. 1 (1997 ) &gt; Nr. 2</option>
+<option value="2863">VffG &gt; Jg. 1 (1997 ) &gt; Nr. 3</option>
+<option value="2864">VffG &gt; Jg. 1 (1997 ) &gt; Nr. 4</option>
+<option value="2865">Inconvenient History &gt; Vol. 10 (2018) &gt; No. 2</option>
+<option value="2866">Bystanders</option>
+<option value="2867">Portuguese</option>
+<option value="2868">Inconvenient History &gt; Vol. 10 (2018) &gt; No. 3</option>
+<option value="2869">Inconvenient History &gt; Vol. 10 (2018) &gt; No. 4</option>
+<option value="2870">Inconvenient History &gt; Vol. 11 (2019)</option>
+<option value="2871">Inconvenient History &gt; Vol. 11 (2019) &gt; No. 1</option>
+<option value="2873">Inconvenient History &gt; Vol. 11 (2019) &gt; No. 2</option>
+<option value="2874">Inconvenient History &gt; Vol. 11 (2019) &gt; No. 3</option>
+<option value="2876">Annales d&#39;histoire révisionniste</option>
+<option value="2877">Annales d&#39;histoire révisionniste &gt; N° 1, Printemps 1987</option>
+<option value="2878">Annales d&#39;histoire révisionniste &gt; N° 2, Été 1987 </option>
+<option value="2879">Annales d&#39;histoire révisionniste &gt; N° 3, Automne-Hiver 1987</option>
+<option value="2880">Annales d&#39;histoire révisionniste &gt; N° 4, Printemps 1988</option>
+<option value="2881">Annales d&#39;histoire révisionniste &gt; N° 5, Été-Automne 1988</option>
+<option value="2882">Annales d&#39;histoire révisionniste &gt; N° 6, Hiver 1988-1989</option>
+<option value="2883">Annales d&#39;histoire révisionniste &gt; N° 8 et dernier, Printemps 1990</option>
+<option value="2885">Révue d&#39;histoire révisionniste &gt; N° 1, Mai-Juin-Juillet 1990</option>
+<option value="2886">Révue d&#39;histoire révisionniste &gt; N° 2, Août-Septembre-Octobre 1990</option>
+<option value="2887">Annales d&#39;histoire révisionniste &gt; N° 7, Printemps-Éte 1989</option>
+<option value="2888">Inconvenient History &gt; Vol. 11 (2019) &gt; No. 4</option>
+<option value="2889">Inconvenient History &gt; Vol. 12 (2020)</option>
+<option value="2890">Inconvenient History &gt; Vol. 12 (2020) &gt; No. 1</option>
+<option value="2891">Inconvenient History &gt; Vol. 12 (2020) &gt; No. 2</option>
+<option value="2893">Inconvenient History &gt; Vol. 12 (2020) &gt; No. 3</option>
+<option value="2894">Inconvenient History &gt; Vol. 12 (2020) &gt; No. 4</option>
+<option value="2895">Vol. 13 (2021)</option>
+<option value="2896">Inconvenient History &gt; Vol. 13 (2021)</option>
+<option value="2897">Inconvenient History &gt; Vol. 13 (2021) &gt; No. 1</option>
+<option value="2898">Inconvenient History &gt; Vol. 13 (2021) &gt; No. 2</option>
+<option value="2899">Nuremberg</option>
+<option value="2900">Inconvenient History &gt; Vol. 13 (2021) &gt; No. 3</option>
+<option value="2901">Krema III</option>
+<option value="2902">Inconvenient History &gt; Vol. 13 (2021) &gt; No. 4</option>
+<option value="2903">Inconvenient History &gt; Vol. 14 (2022)</option>
+<option value="2904">Inconvenient History &gt; Vol. 14 (2022) &gt; No. 1</option>
+<option value="2905">Inconvenient History &gt; Vol. 14 (2022) &gt; No. 2</option>
+<option value="2906">Inconvenient History &gt; Vol. 14 (2022) &gt; No. 3</option>
+<option value="2907">Inconvenient History &gt; Vol. 14 (2022) &gt; No. 4</option>
+<option value="2913">Inconvenient History &gt; Vol. 15 (2023)</option>
+<option value="2914">Inconvenient History &gt; Vol. 15 (2023) &gt; No. 1</option>
+</select>
+</span>
+</div>
+</div>
+<div class="field">
+<div class="control">
+<span id="select-authors" class="select2 is-fullwidth">
+<select name="authors" id="id_authors" multiple>
+<option value="2">Zündel, Ernst</option>
+<option value="1402">Cohen, Karen</option>
+<option value="1403">Abukaud Satel, Nisreen</option>
+<option value="1404">Shiyouki, Nasser</option>
+<option value="1405">Abbady, Sharon</option>
+<option value="1406">Horowitz, Louani Idar</option>
+<option value="1407">Lazarov, Ronen</option>
+<option value="1408">Khallaf, Mohammed</option>
+<option value="1409">Aweidah, Moutnasser</option>
+<option value="1410">Vahab, Yaela</option>
+<option value="1411">Oren, Maya</option>
+<option value="1412">Barhum, Hala</option>
+<option value="1413">Garaudy, Roger</option>
+<option value="1414">Brownfeld, Allan C.</option>
+<option value="1415">Chrostowski, Waldemar</option>
+<option value="1416">Alvi, Dana I.</option>
+<option value="1417">Rucinski, Edmund</option>
+<option value="1418">Shamir, Israel</option>
+<option value="1419">Shahak, Israel</option>
+<option value="1420">Sobran, Joseph</option>
+<option value="1421">Abu Ni&#39;Meh, Ra&#39;Ed</option>
+<option value="1422">Torah True Jews</option>
+<option value="1423">Thion, Serge</option>
+<option value="1424">Arutz Sheva</option>
+<option value="1425">Smith, Bradley R.</option>
+<option value="1426">Rimland, Ingrid</option>
+<option value="1427">Grubach, Paul</option>
+<option value="1428">Roth, Philip</option>
+<option value="1429">Erlich, Guy</option>
+<option value="1430">Meyercord, Ken</option>
+<option value="1431">Thomas, David</option>
+<option value="1432">Sabi, Imad F.</option>
+<option value="1433">Vidal, Gore</option>
+<option value="1434">Scott, Frank </option>
+<option value="1435">Sensor, Wilbur</option>
+<option value="1436">Mcgee, Robert W</option>
+<option value="1437">Ginbar, Yuval</option>
+<option value="1438">Neusner, Jacob</option>
+<option value="1439">Churchill, Winston</option>
+<option value="1440">Groués, Pierre</option>
+<option value="1441">Parmentier, Roger</option>
+<option value="1442">Parnot, Gaston</option>
+<option value="1443">Shavit, Ari</option>
+<option value="1444">U.S. Congress</option>
+<option value="1445">Gollancz, Victor</option>
+<option value="1446">Wilcox, Laird</option>
+<option value="1447">CODOH</option>
+<option value="1448">Schleiter, Yvonne</option>
+<option value="1449">O&#39;Keefe, Theodore J.</option>
+<option value="1450">Widmann, Richard A.</option>
+<option value="1451">Theil, Georges M.</option>
+<option value="1453">Graf, Jürgen</option>
+<option value="1454">Leuchter, Fred A.</option>
+<option value="1455">Roques, Henri</option>
+<option value="1456">Faurisson, Robert</option>
+<option value="1457">Martin, James Joseph</option>
+<option value="1458">aaargh</option>
+<option value="1459">Rassinier, Paul</option>
+<option value="1460">Töben, Fredrick</option>
+<option value="1461">Mccarthy, Jamie</option>
+<option value="1462">Jackson, Nigel</option>
+<option value="1463">Weber, Mark</option>
+<option value="1464">Mattogno, Carlo</option>
+<option value="1465">Rudolf, Germar</option>
+<option value="1466">Barnes, Harry Elmer</option>
+<option value="1467">Willms, Patricia</option>
+<option value="1468">Collins, Douglas</option>
+<option value="1469">Weckert, Ingrid</option>
+<option value="1470">Butz, Arthur R.</option>
+<option value="1471">App, Austin J.</option>
+<option value="1472">Darlow, Michael</option>
+<option value="1473">Krege, Richard</option>
+<option value="1474">Koupman, Rita Boas</option>
+<option value="1475">Cole, David</option>
+<option value="1476">Böck, Richard</option>
+<option value="1477">Baum, Bruno</option>
+<option value="1478">Stäglich, Wilhelm</option>
+<option value="1479">Coroller, Catherine</option>
+<option value="1480">Marquez, Humberto</option>
+<option value="1481">Fowler, Mel</option>
+<option value="1482">Hass, Amira</option>
+<option value="1483">Johnstone, Diana</option>
+<option value="1485">Plantin, Jean</option>
+<option value="1486">Porter, Carlos Whitlock</option>
+<option value="1487">Schwernik, N.</option>
+<option value="1488">Trainin, J.</option>
+<option value="1489">Lyssenko, Nikolaus</option>
+<option value="1490">Burdenko, N.</option>
+<option value="1491">Allen, Andrew</option>
+<option value="1492">Tolstoi, Aleksej</option>
+<option value="1493">Mythropolitos, Nikolai</option>
+<option value="1494">Gundorow, A.S.</option>
+<option value="1495">Bellinger, Joseph P.</option>
+<option value="1496">Schmidt, Hans</option>
+<option value="1497">Black</option>
+<option value="1498">Hull</option>
+<option value="1499">Farris</option>
+<option value="1500">CODOH News</option>
+<option value="1501">Grapple</option>
+<option value="1502">Anonymus, Paul</option>
+<option value="1503">Scheidl, Franz J.</option>
+<option value="1504">Widukind</option>
+<option value="1505">Moran, Tom</option>
+<option value="1506">Faßbender, R.</option>
+<option value="1507">Hannover</option>
+<option value="1508">Countess, Robert H.</option>
+<option value="1509">Weir, John</option>
+<option value="1510">Doyle, Albert</option>
+<option value="1511">Brewer, George</option>
+<option value="1512">Sommers, Ernest</option>
+<option value="1513">Slepokura, Orest</option>
+<option value="1514">Mccullough, Ross</option>
+<option value="1515">Halvorsen, William</option>
+<option value="1516">Crowell, Samuel</option>
+<option value="1517">Berg, Friedrich Paul</option>
+<option value="1518">Mccabe, Adam</option>
+<option value="1519">Marquardt, Ralph</option>
+<option value="1520">Paine, Mackenzie</option>
+<option value="1521">Giwer, Matt</option>
+<option value="1522">Jones, Audrey</option>
+<option value="1523">Kues, Thomas</option>
+<option value="1524">Hoffman, Michael A.</option>
+<option value="1525">Mills, Michael</option>
+<option value="1526">Sniegoski, Stephen J.</option>
+<option value="1527">Hardesty, Michael</option>
+<option value="1528">Desjardins, Daniel D.</option>
+<option value="1529">Anderson, John </option>
+<option value="1530">Mccalden, David</option>
+<option value="1531">Critchley, Alan R.</option>
+<option value="1532">Blair, Eric</option>
+<option value="1533">Avishai, Motzkin</option>
+<option value="1534">Margalit, Gabriel</option>
+<option value="1535">Ain, Stewart</option>
+<option value="1536">Miller, David</option>
+<option value="1537">Rosenblatt, Gary</option>
+<option value="1538">Lipstadt, Deborah E </option>
+<option value="1539">Derfner, Larry</option>
+<option value="1540">Yudelson, Larry</option>
+<option value="1541">Austin American-Statesman, 18. Dec. 1997</option>
+<option value="1542">Eisenthal, Bram D.</option>
+<option value="1543">Lasson, Kenneth</option>
+<option value="1544">Mahler, Jonathan</option>
+<option value="1545">Bennett, Barry</option>
+<option value="1546">PR Newswire</option>
+<option value="1547">Najarian, James</option>
+<option value="1548">Brook, Paula</option>
+<option value="1549">Rowe, Chip</option>
+<option value="1550">Douglas, Lawrence</option>
+<option value="1551">Buckler, Grant</option>
+<option value="1552">Fein, Leonard</option>
+<option value="1553">Shea, Christopher</option>
+<option value="1554">Stannard, David E</option>
+<option value="1555">Pearl, Lesley</option>
+<option value="1556">Goldhagen, Daniel Jonah</option>
+<option value="1557">DenierBud</option>
+<option value="1558">Sauckel, Fritz</option>
+<option value="1559">Himmler, Heinrich</option>
+<option value="1560">Zeitzler</option>
+<option value="1561">Peuckert</option>
+<option value="1562">Bachmann</option>
+<option value="1563">Schnur</option>
+<option value="1564">Bender</option>
+<option value="1565">Christensen</option>
+<option value="1566">Hoy, Michael</option>
+<option value="1567">Den Ouden, Marco</option>
+<option value="1568">Holaday, Kenneth L.</option>
+<option value="1569">Brutto, Ray</option>
+<option value="1570">Bjerknes, Christopher Jon</option>
+<option value="1571">Mcdaniel, George</option>
+<option value="1572">Rodriguez, Roberto</option>
+<option value="1573">Gonzalez, Patrisia</option>
+<option value="1574">Praeger, Jane</option>
+<option value="1575">Anonymous</option>
+<option value="1576">Macdonald, Kevin</option>
+<option value="1577">Lieb, Julian</option>
+<option value="1578">Focal Point Publications</option>
+<option value="1579">Reynouard, Vincent </option>
+<option value="1580">Kollerstrom, Nicholas</option>
+<option value="1581">Temmer, Maria</option>
+<option value="1582">Verner, Bruno</option>
+<option value="1583">Giocamonte, Stefano</option>
+<option value="1584">Wilson, David</option>
+<option value="1585">Mendoza, Rodrigo</option>
+<option value="1586">The TransCyberian Express</option>
+<option value="1587">Germanica</option>
+<option value="1588">Slade</option>
+<option value="1589">Marques, A.S.</option>
+<option value="1590">Christopher, Mandar</option>
+<option value="1591">Beaulieu, Jean-François</option>
+<option value="1592">Henry, Martin</option>
+<option value="1593">Aitken, Jessie </option>
+<option value="1594">Freeman, Frederic </option>
+<option value="1595">Farmer, Chris</option>
+<option value="1596">Dumas, Steve</option>
+<option value="1597">Mcgowan, Daniel</option>
+<option value="1598">Womack, Curt</option>
+<option value="1599">Bartlett, Roger</option>
+<option value="1600">Keller, Hellen</option>
+<option value="1601">Potemkin, Orloff</option>
+<option value="1602">Hayes, Peter</option>
+<option value="1603">Barker, Kim</option>
+<option value="1604">Thetgyi, Olivia</option>
+<option value="1605">Yahya, Harun</option>
+<option value="1606">Piper, Franciszek</option>
+<option value="1607">Gray, Andrew</option>
+<option value="1608">Bishop, Joseph</option>
+<option value="1609">Muirden, Geoff</option>
+<option value="1610">Myers, Jason Willis</option>
+<option value="1611">Irving, David</option>
+<option value="1612">Shallit, Jeffrey</option>
+<option value="1613">Hayward, Joel</option>
+<option value="1614">Zadencki, Jaroslaw </option>
+<option value="1615">Delcroix, Eric</option>
+<option value="1617">Chombeau, Christiane</option>
+<option value="1618">Loeser, Else</option>
+<option value="1620">King, Henry Churchill</option>
+<option value="1621">Crane, Charles R.</option>
+<option value="1622">Un Piéton de Paris</option>
+<option value="1623">Verbeke, Herbert</option>
+<option value="1624">Shawqi, Ahmad</option>
+<option value="1625">Marcellus, Thomas J.</option>
+<option value="1626">Institute For Historical Review</option>
+<option value="1628">Kulaszka, Barbara</option>
+<option value="1629">Glynn, Martin H.</option>
+<option value="1630">Health Institution of the Protectorate of Bohemia and Moravia</option>
+<option value="1631">Carnegie Endowment for International Peace</option>
+<option value="1632">Ridlon, J.R.</option>
+<option value="1633">Williams, C.L.</option>
+<option value="1634">O&#39;Neill, C.</option>
+<option value="1635">Karmen, Roman</option>
+<option value="1636">Pravda</option>
+<option value="1637">Cross, Colin</option>
+<option value="1638">Fargion, Lilliano P.</option>
+<option value="1639">Fest, Joachim C.</option>
+<option value="1640">Friedländer, Saul</option>
+<option value="1641">Laqueur, Walter</option>
+<option value="1642">Mayer, Arno J.</option>
+<option value="1643">Noakes, J.</option>
+<option value="1644">Pridham, G.</option>
+<option value="1645">Poliakov, Léon</option>
+<option value="1646">Shirer, William</option>
+<option value="1647">Zentner, Christian</option>
+<option value="1648">Hitler, Adolf</option>
+<option value="1649">Göring, Hermann</option>
+<option value="1650">Rademacher, Franz</option>
+<option value="1651">Kirk, Alexander</option>
+<option value="1652">Turkey-World Center of News Interest</option>
+<option value="1653">Basler Nachrichten</option>
+<option value="1654">Globocnik, Odilio</option>
+<option value="1656">Campbell, J.B</option>
+<option value="1657">Ball, John Clive</option>
+<option value="1658">Eisenhower, Dwight D.</option>
+<option value="1659">Michael, William</option>
+<option value="1660">Bryce, Viscount</option>
+<option value="1661">Pollock, Frederick</option>
+<option value="1662">Hopkinson, Alfred</option>
+<option value="1663">Fisher, H. A. L.</option>
+<option value="1664">Cox, Harold</option>
+<option value="1665">Digby, Kenelm E.</option>
+<option value="1666">Broszat, Martin</option>
+<option value="1667">Poznanski, Gitel</option>
+<option value="1668">U.S. Department of State</option>
+<option value="1669">The Allies</option>
+<option value="1670">Tiedemann, Herbert</option>
+<option value="1671">Gauss, Ernst</option>
+<option value="1672">Walendy, Udo</option>
+<option value="1674">Jordan, Claus</option>
+<option value="1675">Neumaier, Arnulf</option>
+<option value="1676">Köhler, Manfred</option>
+<option value="1677">Ney, Johannes Peter</option>
+<option value="1678">Kaufman, Theodor N</option>
+<option value="1679">Raico, Ralph </option>
+<option value="1680">Kubek, Anthony</option>
+<option value="1681">Lindtner, Christian </option>
+<option value="1682">Holming, Göran </option>
+<option value="1683">Renk, Brian A.</option>
+<option value="1684">Kirell, Jason</option>
+<option value="1685">Pizov, Mark</option>
+<option value="1686">Simon Wiesenthal Center</option>
+<option value="1687">Dt. Informationsstelle</option>
+<option value="1688">Keren, Daniel </option>
+<option value="1689">Mazal, Harry W.</option>
+<option value="1690">Barlow, John Perry</option>
+<option value="1691">Lavin, Paul</option>
+<option value="1692">Newman, Robert J.</option>
+<option value="1693">Kennedy, Ted</option>
+<option value="1694">Coalition of Online Civil Liberties Organisations</option>
+<option value="1695">Beam, L.R</option>
+<option value="1696">Sarich, I.</option>
+<option value="1697">Zimmer, Dick</option>
+<option value="1698">Powell Iii, Adam Clayton</option>
+<option value="1699">Steinhardt, Barry</option>
+<option value="1700">Electronic Frontiers Italy</option>
+<option value="1701">American Civil Liberties Union</option>
+<option value="1702">Association des Utilisateurs d&#39;Internet</option>
+<option value="1703">Committee to Protect Journalists</option>
+<option value="1704">Electronic Frontier Foundation</option>
+<option value="1705">Human Rights Watch</option>
+<option value="1706">Chaudhry, Lakshmi</option>
+<option value="1707">Kiggins, Christopher</option>
+<option value="1708">Greene, Robert W.</option>
+<option value="1709">Frisina, Ellen T.</option>
+<option value="1710">Kaplun, Alex</option>
+<option value="1711">Lovelace, Timothy</option>
+<option value="1712">Mcfadden, Susan</option>
+<option value="1713">Lareau, Alan</option>
+<option value="1714">Perlman, Baron</option>
+<option value="1715">Hahn, Dana K.</option>
+<option value="1716">Rivers, Kimberly</option>
+<option value="1717">Rindo, Ron</option>
+<option value="1718">Voelker, Keith</option>
+<option value="1719">Zibung, Brad</option>
+<option value="1720">Denissen, Laura</option>
+<option value="1721">Dicker, Fredric U.</option>
+<option value="1722">Birnbaum, Gregg</option>
+<option value="1723">Neece, Lucas</option>
+<option value="1724">Johnson, Cabell W.</option>
+<option value="1725">Van Roden, Edward L.</option>
+<option value="1726">Keeling, Ralph F.</option>
+<option value="1727">Edoin, Hoito</option>
+<option value="1728">Iserson, Kenneth V.</option>
+<option value="1729">New York Times</option>
+<option value="1730">De Zayas, Alfred M.</option>
+<option value="1731">Ehrenburg, Ilya</option>
+<option value="1732">Capehart, Homer</option>
+<option value="1734">Carto, Willis A</option>
+<option value="1735">AnswerMan</option>
+<option value="1749">Rademacher, Werner</option>
+<option value="1750">Nowak, Hans Jürgen</option>
+<option value="1751">Siegert, Karl</option>
+<option value="1752">Hoffmann, Joachim</option>
+<option value="1753">Mägerle, Anton</option>
+<option value="1755">Lambrecht, Wolfgang</option>
+<option value="1756">Heddesheimer, Don</option>
+<option value="1757">The Barnes Review</option>
+<option value="1758">Alvarez, Santiago</option>
+<option value="1759">Marais, Pierre</option>
+<option value="1961">Berger, Jörg</option>
+<option value="1962">Chelain, André</option>
+<option value="1976">Gärtner, Michael</option>
+<option value="1984">Manon, Ernst</option>
+<option value="1985">Pedersen, Hans</option>
+<option value="1986">Pfitzner, Wolfgang</option>
+<option value="1989">Wardin, Eberhard</option>
+<option value="1990">Strauss, Wolfgang</option>
+<option value="1991">Sommer, Dr. Gerhard</option>
+<option value="1992">Schlee, Prof. Dr. H.C. Emil</option>
+<option value="1997">Bruun, Ernst</option>
+<option value="1998">Burdick, Charles</option>
+<option value="1999">Chapsky, Bruno</option>
+<option value="2000">Zaverdinos, Costas</option>
+<option value="2001">Müller, Dr. Otward</option>
+<option value="2006">Nettesheim, Oswald</option>
+<option value="2008">Bartling, Dr. Dieter</option>
+<option value="2009">Dewdney, Prof. Dr. Alexander K.</option>
+<option value="2010">Elsis, Mark</option>
+<option value="2011">Dixon, Francis</option>
+<option value="2012">Parry, Nigel</option>
+<option value="2013">El Fassed, Arjan</option>
+<option value="2014">Maguire, Colonel</option>
+<option value="2015">Schröder, Sibylle</option>
+<option value="2016">Smith, Scott L.</option>
+<option value="2017">Nordling, Carl O.</option>
+<option value="2018">Pedersen, Thora</option>
+<option value="2019">Donner, Charles E.</option>
+<option value="2021">Witzsch, Hans-Jürgen</option>
+<option value="2022">Rami, Ahmed</option>
+<option value="2026">Fromm, Paul</option>
+<option value="2027">Fudge, Thomas A.</option>
+<option value="2031">Weber, Charles E.</option>
+<option value="2035">Song, Caroline</option>
+<option value="2036">Schneider, Andrea</option>
+<option value="2037">Reeves, Ronald</option>
+<option value="2038">M., G.</option>
+<option value="2039">Lawson, Anthony</option>
+<option value="2040">Hunt, Eric</option>
+<option value="2041">Lüftl, Walter</option>
+<option value="2047">Werner, Steffen</option>
+<option value="2069">Sherry, Kevin F.</option>
+<option value="2076">Heaney, Joe</option>
+<option value="2077">Fabien, Guillaume</option>
+<option value="2078">Mullenax, David</option>
+<option value="2079">Burns, Ell.</option>
+<option value="2144">Dunskus, Thomas</option>
+<option value="2145">Hegazi, Mohammed A. </option>
+<option value="2146">Humm, Otto</option>
+<option value="2147">Janson, Eric</option>
+<option value="2148">Meyer, Rudy</option>
+<option value="2149">Ferdinand, Paul</option>
+<option value="2150">Fowler, Eric</option>
+<option value="2151">Krail, Wolfram</option>
+<option value="2153">Wright, Bill</option>
+<option value="2156">Baßler, Karl</option>
+<option value="2157">BBC</option>
+<option value="2158">Ben Abbamari, Michael</option>
+<option value="2159">Copley, Gregory</option>
+<option value="2160">Cole, Christopher</option>
+<option value="2161">Kemp, Arthur</option>
+<option value="2164">Rucker, Jett</option>
+<option value="2165">Bartesch, Heinz</option>
+<option value="2166">Cooper, Abraham</option>
+<option value="2167">Nullifidian, Shafar</option>
+<option value="2168">Kausch, F.G.</option>
+<option value="2169">Stroke, Cliff</option>
+<option value="2170">Tixel, Reinhard</option>
+<option value="2171">Michaels, Daniel W.</option>
+<option value="2172">Nordbruch, Claus</option>
+<option value="2173">Stedul, Nikola</option>
+<option value="2174">Sunic, Tomislav</option>
+<option value="2175">Provan, Charles D.</option>
+<option value="2176">Brockschmidt, David</option>
+<option value="2177">Muller, Ch.</option>
+<option value="2178">Richardson, Eric H.</option>
+<option value="2179">Wiesholler, Georg</option>
+<option value="2180">Wollsatz, Heinrich</option>
+<option value="2181">Mcnally, Patrick S.</option>
+<option value="2182">Mercieca, Charles</option>
+<option value="2190">Ryder, Thomas</option>
+<option value="2191">Satyr, Yoke</option>
+<option value="2192">Schirmer-Vowinckel, Ilse</option>
+<option value="2193">Springer, Markus</option>
+<option value="2197">Amner, Paul</option>
+<option value="2198">Baum, Gerhart</option>
+<option value="2199">Guillaume, Pierre</option>
+<option value="2200">Hartmann, Doris</option>
+<option value="2201">Boisdefeu, Jean-Marie</option>
+<option value="2203">Raven, Greg</option>
+<option value="2205">The Armenian Reporter</option>
+<option value="2206">Woodley, Brian</option>
+<option value="2207">Stukel, Maria</option>
+<option value="2208">Marsit, David</option>
+<option value="2209">Penalhaus, Grazzy</option>
+<option value="2214">Mckeon, Daniel</option>
+<option value="2215">Eibicht, Rolf-Josef</option>
+<option value="2216">Schneider, Angela</option>
+<option value="2244">Overall, Zan</option>
+<option value="2245">Crookes, Chris</option>
+<option value="2247">Turley, Mark</option>
+<option value="2248">Smith, Chip</option>
+<option value="2249">Gunnels, Martin</option>
+<option value="2250">Rollins, Lou A.</option>
+<option value="2251">Dalton, Thomas</option>
+<option value="2252">Felderer, Ditlieb</option>
+<option value="2253">Fitzgibbon, Louis</option>
+<option value="2255">Brandon, Lewis</option>
+<option value="2257">Verrall, Richard</option>
+<option value="2258">Harwood, Richard</option>
+<option value="2259">Kanold, Otto</option>
+<option value="2260">Ponsonby, Arthur</option>
+<option value="2261">Alpern, Sara</option>
+<option value="2262">Unterberger, Betty M.</option>
+<option value="2263">Stuart, Karen A.</option>
+<option value="2264">Gold, David M.</option>
+<option value="2265">Vernon, Eric J.</option>
+<option value="2266">Lapides, Fred</option>
+<option value="2267">Chaim, Bezalel</option>
+<option value="2268">Lutton, Charles</option>
+<option value="2269">Armstrong, Mason</option>
+<option value="2270">Baumhaft, Joe</option>
+<option value="2271">Bliss, Robert M.</option>
+<option value="2272">Hagen, John H.</option>
+<option value="2274">Konkin Iii, Samuel E.</option>
+<option value="2275">Lawson, Richard</option>
+<option value="2276">Seleshko, M.</option>
+<option value="2277">Stein, Howard F.</option>
+<option value="2279">Eisen, Paul</option>
+<option value="2286">Bennett, John T.</option>
+<option value="2287">Friedrich, Leonhard</option>
+<option value="2288">Fulton, Maureen</option>
+<option value="2289">Bensman, Marvin R.</option>
+<option value="2290">Ash, James K.</option>
+<option value="2291">O&#39;Keefe, Peter </option>
+<option value="2292">Dicenzo, R.J.</option>
+<option value="2293">Kehl, Horst</option>
+<option value="2294">Landwehr, Richard</option>
+<option value="2295">Lilienthal, Alfred M.</option>
+<option value="2296">Merriam, Ray</option>
+<option value="2297">Ross, Sandra</option>
+<option value="2298">Smith, Wayland D.</option>
+<option value="2299">Wainwright, Peter</option>
+<option value="2300">Wesserle, Andreas R.</option>
+<option value="2301">Buchner, Reinhard K.</option>
+<option value="2302">Hansen, Desmond</option>
+<option value="2303">Beck, Philip</option>
+<option value="2304">Maiolini, Ezio M.</option>
+<option value="2305">Von Der Heide, Hans</option>
+<option value="2306">Mcdavit, George</option>
+<option value="2307">Silberstein, W.R.</option>
+<option value="2308">Schuldes, W.K.F.</option>
+<option value="2309">Hendry, T.D.</option>
+<option value="2310">Wicks, L.E.</option>
+<option value="2311">Sterner, Theodore G.</option>
+<option value="2312">Macdonough, H.R.</option>
+<option value="2313">Smith, Paul G.</option>
+<option value="2314">Emry, Sheldon</option>
+<option value="2315">Gerke, Hermann A.</option>
+<option value="2316">Fischer, R.H.</option>
+<option value="2317">Fusilier, Richard</option>
+<option value="2318">Andronescu, Serban C.</option>
+<option value="2319">Clarke, Barbara B.</option>
+<option value="2320">Dudley, W.E.</option>
+<option value="2321">Larson, Martin A.</option>
+<option value="2322">Irwin, Thomas Henry</option>
+<option value="2323">Corners Ii, George F.</option>
+<option value="2324">Clerkin, Donald V.</option>
+<option value="2325">Botha, Rederick</option>
+<option value="2326">Greaves, Percy L.</option>
+<option value="2327">Nakhleh, Issah</option>
+<option value="2328">Buck, Pitman</option>
+<option value="2329">Borra, Ranjan</option>
+<option value="2330">Degrelle, Léon</option>
+<option value="2331">Hadawi, Sami</option>
+<option value="2332">Hankins, Frank H.</option>
+<option value="2333">Stimely, Keith</option>
+<option value="2334">Whisker, James B.</option>
+<option value="2335">Hoggan, David L.</option>
+<option value="2336">Kent, Tyler</option>
+<option value="2337">Lindsey, William B.</option>
+<option value="2338">Thompson, H. Keith</option>
+<option value="2339">Jordan, Rudolf</option>
+<option value="2340">Braun, Karl Otto</option>
+<option value="2341">Diwald, Hellmut</option>
+<option value="2342">Gleason, K. C.</option>
+<option value="2343">Granata, Russ</option>
+<option value="2344">Hattenhauer, Darryl</option>
+<option value="2345">Kuesters, Elisabeth</option>
+<option value="2346">Row, Robert</option>
+<option value="2347">Rubinstein, W. D.</option>
+<option value="2348">Sanning, Walter N.</option>
+<option value="2349">Baxter, David</option>
+<option value="2350">Christophersen, Thies</option>
+<option value="2351">Chapman, Robert J.</option>
+<option value="2352">Moroz, Valentyn</option>
+<option value="2353">Hasegawa, Michiko</option>
+<option value="2354">Trohan, Walter</option>
+<option value="2355">John, Robert</option>
+<option value="2357">Benson, Ivor</option>
+<option value="2358">Berkel, Robert Karl</option>
+<option value="2359">Chomsky, Noam</option>
+<option value="2360">Franz-Willing, Georg</option>
+<option value="2362">Hall, Robert A.</option>
+<option value="2363">Ward, Arthur S.</option>
+<option value="2364">Black, Robert C.</option>
+<option value="2365">Oppenheimer, Peter H.</option>
+<option value="2366">Bradescu, Faust</option>
+<option value="2367">Ronnett, Alexander E.</option>
+<option value="2368">Von Uhlenhorst-Ziechmann, William K.</option>
+<option value="2369">Atelier, Robert</option>
+<option value="2370">Conway, John S.</option>
+<option value="2371">Dickson, Sam</option>
+<option value="2372">Hummel, Jeffrey Rogers</option>
+<option value="2374">Riggenbach, Jeff</option>
+<option value="2375">Johnson, Edward</option>
+<option value="2376">Lang, Reuben Clarence</option>
+<option value="2377">Peel, Peter H.</option>
+<option value="2378">Reilly, Janet</option>
+<option value="2379">Wikoff, Jack</option>
+<option value="2380">Berkis, Alexander V.</option>
+<option value="2381">Remer, Otto Ernst</option>
+<option value="2382">Merson, Martin</option>
+<option value="2383">Ries, John M.</option>
+<option value="2384">Smith, Dennis N.</option>
+<option value="2385">Strang, John P.</option>
+<option value="2391">Aynat Eknes, Enrique</option>
+<option value="2392">Lebailly, Jacques</option>
+<option value="2393">De Boüard, Michel</option>
+<option value="2394">Klett, Ronald</option>
+<option value="2396">Verbeke, Siegfried</option>
+<option value="2397">Hesseltine, William B.</option>
+<option value="2398">Grimstad, William</option>
+<option value="2399">Miki, Hideo</option>
+<option value="2400">Marchetti, Victor</option>
+<option value="2401">Otten, Herman</option>
+<option value="2402">Adams, Henry M.</option>
+<option value="2403">Cobden, John</option>
+<option value="2404">Halow, Joseph</option>
+<option value="2405">Rost Van Tonningen, Florence S.</option>
+<option value="2406">Jackson, Thomas</option>
+<option value="2407">Nawratil, Heinz</option>
+<option value="2408">Brech, Martin</option>
+<option value="2409">Clive, Robert</option>
+<option value="2410">Dibert, A.</option>
+<option value="2411">Hawkins, James</option>
+<option value="2412">Laska, Werner Wilhelm</option>
+<option value="2413">Williams, Robert H.</option>
+<option value="2414">Yockey, Francis Parker</option>
+<option value="2415">Brecht, Karl</option>
+<option value="2416">Poullada, Leon B.</option>
+<option value="2417">Toland, John</option>
+<option value="2424">Turley, Mark</option>
+<option value="2425">Kerr, Frederick</option>
+<option value="2426">Fleming, Gerald</option>
+<option value="2427">Hottelet, Carl</option>
+<option value="2428">Manion, Dean C. </option>
+<option value="2429">Rosit, Nelson</option>
+<option value="2430">Lindbergh, Charles A.</option>
+<option value="2431">Stolley, Roger A.</option>
+<option value="2432">Tojo, Hideki</option>
+<option value="2433">Mclaren, John R.</option>
+<option value="2434">Stofberg, Louis F.</option>
+<option value="2435">Dan, Jaromir J.</option>
+<option value="2436">Wahls, Hans</option>
+<option value="2438">Taylor, Samuel Jared</option>
+<option value="2439">Auerbach, Hellmuth</option>
+<option value="2440">et al.</option>
+<option value="2441">Prouty, L. Fletcher</option>
+<option value="2442">Hess, Wolf Rüdiger</option>
+<option value="2444">Langford, Edward</option>
+<option value="2445">Stanwood, Charles</option>
+<option value="2446">Martin, Neil</option>
+<option value="2448">Lane, Terry</option>
+<option value="2449">Adams, Phillip</option>
+<option value="2450">Alexander, James</option>
+<option value="2451">Constable, Trevor J.</option>
+<option value="2452">Mccormack, L.H.</option>
+<option value="2455">Hess, Rudolf</option>
+<option value="2456">Egerton, Douglas R.</option>
+<option value="2458">Moynihan, Daniel Patrick</option>
+<option value="2459">Waldheim, Kurt</option>
+<option value="2460">Morgan, Robert</option>
+<option value="2461">Martinez, Mary Ball</option>
+<option value="2462">Vezelis, Louis</option>
+<option value="2463">Trevor-Roper, Hugh</option>
+<option value="2464">Striedieck, Karl</option>
+<option value="2465">Artemis, G.</option>
+<option value="2466">Backwords, Ace</option>
+<option value="2467">Brentar, Jerome</option>
+<option value="2470">Kling, Robert</option>
+<option value="2471">Stolberg, Louis F.</option>
+<option value="2472">Toner, Edward J.</option>
+<option value="2473">Gubic, Marijan</option>
+<option value="2474">Brookes, Frank</option>
+<option value="2475">Mortl, John</option>
+<option value="2476">Kelfkens, J.</option>
+<option value="2477">Nolte, Ernst</option>
+<option value="2478">Warren, Ian</option>
+<option value="2479">Montgomery, Andrew</option>
+<option value="2480">De Benoist, Alain</option>
+<option value="2481">Anantharamiah, Srinidhi</option>
+<option value="2482">Hill, Leonidas E.</option>
+<option value="2483">Conway, John S.</option>
+<option value="2485">Solzhenitsyn, Aleksandr</option>
+<option value="2486">Bloch, Eduard</option>
+<option value="2487">Phillips, Richard G.</option>
+<option value="2488">Schmidt, Dieter W.</option>
+<option value="2490">Teplyakov, Yuri</option>
+<option value="2491">Français, Jeune</option>
+<option value="2492">Morris, Benny</option>
+<option value="2493">Plummer, Oscar E.</option>
+<option value="2495">Mohler, Armin</option>
+<option value="2496">Oliver, Revilo P.</option>
+<option value="2497">Havel, Vaclav</option>
+<option value="2498">Clarke, Andrew</option>
+<option value="2499">Saunders, William</option>
+<option value="2500">Chamberlin, William Henry</option>
+<option value="2501">Hussein, Magdi</option>
+<option value="2502">Maltsev, Yuri N.</option>
+<option value="2503">Fogarty, Philip J.</option>
+<option value="2504">Gabis, Tomasz</option>
+<option value="2511">Kohn, Moshe</option>
+<option value="2512">Hecht, Eli</option>
+<option value="2513">Buchwald, Ephraim</option>
+<option value="2514">Dilorenzo, Thomas</option>
+<option value="2515">O&#39;Reilly, Patrick </option>
+<option value="2516">Shermer, Michael</option>
+<option value="2517">Klingel, Terry A.</option>
+<option value="2518">Jackson, Jesse L.</option>
+<option value="2519">Marchevsky, Ivan</option>
+<option value="2520">Rothbard, Murray N.</option>
+<option value="2521">Ziff, William B.</option>
+<option value="2522">Krohmer, Helmut</option>
+<option value="2523">Svedlund, E.</option>
+<option value="2524">Gannon, Dan</option>
+<option value="2525">Strakon, Nicholas</option>
+<option value="2526">Hershel, R.</option>
+<option value="2527">Butler, Eric D.</option>
+<option value="2528">Stark, Marvin</option>
+<option value="2529">Swartz, Norman</option>
+<option value="2530">Oluwatoyin, Anthony O.</option>
+<option value="2531">Galea, Traian</option>
+<option value="2532">Jones, Lesya</option>
+<option value="2533">Gottfried, Paul</option>
+<option value="2534">Chalmers, Brian</option>
+<option value="2535">Mason, Jr., Pat N.</option>
+<option value="2537">Neff, Donald</option>
+<option value="2538">Futterman, Matthew</option>
+<option value="2539">Swerdlow, Gileul</option>
+<option value="2540">Higgs, Robert</option>
+<option value="2541">Martello, Robert</option>
+<option value="2542">Merrill, Clifford R.</option>
+<option value="2543">Gagnon, Richard</option>
+<option value="2544">Arter, J. R.</option>
+<option value="2545">Pavlik, Gregory P.</option>
+<option value="2546">Consoli, Mario</option>
+<option value="2547">Ipatiev, Nikodim M.</option>
+<option value="2548">Schaub, Bernhard</option>
+<option value="2549">Welham, Keri</option>
+<option value="2550">Curtiss, Richard H.</option>
+<option value="2554">Mueller, John</option>
+<option value="2556">Marshall, Rachelle</option>
+<option value="2557">Smith, Goldwin</option>
+<option value="2558">Meyer, Dick</option>
+<option value="2559">Rogers, Will</option>
+<option value="2560">Twing, Shawn L.</option>
+<option value="2561">Charles, Antony</option>
+<option value="2562">Beary, Kevin</option>
+<option value="2563">Twain, Mark</option>
+<option value="2564">Harrison, Peter</option>
+<option value="2565">Taki</option>
+<option value="2566">Taylor, Harvey</option>
+<option value="2567">Sindi, Abdullah Mohammad</option>
+<option value="2568">Topol, Eduard</option>
+<option value="2569">Brown, D.</option>
+<option value="2570">Constable, Trevor J.</option>
+<option value="2572">Richman, Sheldon</option>
+<option value="2573">Bruckner, Zoltán</option>
+<option value="2574">Bandow, Doug</option>
+<option value="2577">Williamson, Richard</option>
+<option value="2578">Sojka, Klaus</option>
+<option value="2581">Deckert, Günter</option>
+<option value="2586">Giraldi, Philip M.</option>
+<option value="2587">Taylor, John K.</option>
+<option value="2588">Schlafly, Phyllis</option>
+<option value="2589">Stoddard, Lothrop</option>
+<option value="2590">Muehlenkamp, Roberto</option>
+<option value="2591">Bahrî, Yûnus</option>
+<option value="2592">Guttenplan, Don D.</option>
+<option value="2593">Wohlgelernter, Elli</option>
+<option value="2594">Pollak, Steven H.</option>
+<option value="2595">Murphy, Kim</option>
+<option value="2596">Van Pelt, Robert J.</option>
+<option value="2597">Evans, Richard</option>
+<option value="2598">Gray, Charles</option>
+<option value="2599">Rachut, Eric</option>
+<option value="2600">Associated Press</option>
+<option value="2601">Davis, Douglas</option>
+<option value="2602">Gitell, Seth</option>
+<option value="2603">Horsnell, Michael</option>
+<option value="2604">Jacobus, Helen</option>
+<option value="2605">Millar, Peter</option>
+<option value="2606">Dmytryshyn, Basil</option>
+<option value="2607">Richey, Homer G.</option>
+<option value="2624">Lemire, Marc</option>
+<option value="2629">Rachout, Eric</option>
+<option value="2630">Tarter, Donald E.</option>
+<option value="2635">Heikal, Mohamed Hasanein</option>
+<option value="2636">Lungen, Paul</option>
+<option value="2637">Gralla, Joan</option>
+<option value="2638">Santomauro, Michael</option>
+<option value="2639">Staugaard, Søren R.</option>
+<option value="2640">Sack, John</option>
+<option value="2641">Eversoul, Phil</option>
+<option value="2642">Alloush, Ibrahim</option>
+<option value="2643">Mccloskey, Paul N.</option>
+<option value="2644">Hogan, Jim</option>
+<option value="2645">Jones, Paul</option>
+<option value="2646">Siaus, Alexander</option>
+<option value="2647">Whitney, Glayde</option>
+<option value="2648">Tourney, Phillip</option>
+<option value="2649">Ennes, James</option>
+<option value="2666">Carroll, Rory</option>
+<option value="2695">Merlin, David</option>
+<option value="2696">Brunner, Frank</option>
+<option value="2697">Hirshberg, Mark</option>
+<option value="2698">Of Cyberia, Lawrence</option>
+<option value="2699">The Australian</option>
+<option value="2700">Morrison, Pete</option>
+<option value="2701">Alexis, Jonas E.</option>
+<option value="2702">The Daily Mail</option>
+<option value="2715">Bartec, Robert</option>
+<option value="2717">Poumier, Maria</option>
+<option value="2718">Yeager, Carolyn</option>
+<option value="2721">Szczecinianin</option>
+<option value="2722">Wooden, Cindy</option>
+<option value="2723">Clark, Veronica</option>
+<option value="2724">Smith, Michael K.</option>
+<option value="2726">Macvie, Ezra</option>
+<option value="2727">Schwensen, Klaus</option>
+<option value="2728">Siegel, Rich</option>
+<option value="2729">Bolton, Kerry R.</option>
+<option value="2730">Anonymous, Nemo</option>
+<option value="2737">Gardner, Henry</option>
+<option value="2738">Goodson, Stephen</option>
+<option value="2742">Jansson, Friedrich</option>
+<option value="2770">Vrij Historisch Onderzoek</option>
+<option value="2771">Buenos, Tal</option>
+<option value="2772">Westerlund, Dave</option>
+<option value="2773">Hajduk</option>
+<option value="2774">Rappoport, Jon</option>
+<option value="2775">Haaretz Service</option>
+<option value="2776">Hanania, Ray</option>
+<option value="2777">Sterzinger, Ann</option>
+<option value="2778">Poggi, Giuseppe</option>
+<option value="2779">Mill, John Stuart</option>
+<option value="2780">Richardson, Albert</option>
+<option value="2781">Fetzer, James H.</option>
+<option value="2782">Hasan, Mehdi</option>
+<option value="2783">Atzmon, Gilad</option>
+<option value="2784">London Times</option>
+<option value="2785">District Court of Ontario</option>
+<option value="2787">Köchel, Heinrich</option>
+<option value="2788">Olodogma</option>
+<option value="2789">Gallant, Stephan</option>
+<option value="2790">Berdahl, Robert</option>
+<option value="2791">Kellner, Herbert</option>
+<option value="2792">The SR Team</option>
+<option value="2793">Hernández, Roberto</option>
+<option value="2794">Dragon, Miroslav</option>
+<option value="2795">Mordrel, Trystan</option>
+<option value="2796">Johnson, D.E.</option>
+<option value="2797">Finch, Maggie</option>
+<option value="2798">Friedemann, Bruce</option>
+<option value="2799">Duke, David</option>
+<option value="2800">CODOH Trustees</option>
+<option value="2801">Riner, Jack</option>
+<option value="2802">Wieland, Christoph M.</option>
+<option value="2803">Zimmerman, John</option>
+<option value="2804">Krollpfeiffer, J.</option>
+<option value="2805">Mendès-France, Tristan</option>
+<option value="2806">Prazan, Michaël</option>
+<option value="2807">Barone, Ermanno</option>
+<option value="2808">Metroland, Margot</option>
+<option value="2809">Krafft, Charles</option>
+<option value="2810">Heink, Wilfried</option>
+<option value="2811">Smith, Dennis A.</option>
+<option value="2812">Hoover, Herbert H.</option>
+<option value="2813">Lahr, Larry</option>
+<option value="2814">Scherbaum, Fred</option>
+<option value="2815">Ittner, Gerhard</option>
+<option value="2816">Deegan, Gordon</option>
+<option value="2817">Lukianoff, Greg</option>
+<option value="2818">Pinque, Audrey</option>
+<option value="2819">Hrankowski, John</option>
+<option value="2820">Seem, Abou</option>
+<option value="2821">Dostlar, Sevgili</option>
+<option value="2822">Hankins, Melissa</option>
+<option value="2823">Cormier, Ryan</option>
+<option value="2824">Potts, N. Joseph</option>
+<option value="2825">Rizoli, Jim</option>
+<option value="2826">Bissell, George</option>
+<option value="2827">Gardner, R.J.</option>
+<option value="2828">Stolz, Sylvia</option>
+<option value="2829">Johnson, Greg</option>
+<option value="2830">Dalton, Anita</option>
+<option value="2831">O&#39;Meara, James J.</option>
+<option value="2832">Robinson, David W.</option>
+<option value="2833">Cohen Vaxberg, Natali</option>
+<option value="2834">Routledge, Warren B.</option>
+<option value="2835">Calder, Alexander</option>
+<option value="2836">Scott, Hadding</option>
+<option value="2837">Bradbury, Bentor L.</option>
+<option value="2838">Studer, Andres W.</option>
+<option value="2839">Hunt, Kyle</option>
+<option value="2840">James, W.</option>
+<option value="2841">Tamo , Kosto</option>
+<option value="2842">Kaminski, John</option>
+<option value="2843">Chabloz, Alison</option>
+<option value="2844">Castle Hill Publishers</option>
+<option value="2845">Herskovitz, Henry</option>
+<option value="2846">Torben</option>
+<option value="2848">Finkelstein, Norman</option>
+<option value="2849">Renouf , Michèle</option>
+<option value="2850">Ruhe, Brian</option>
+<option value="2851">Walsh, Mike</option>
+<option value="2852">Hall, Professor Anthony </option>
+<option value="2853">Deana, Franco</option>
+<option value="2854">Markiewicz, Jan</option>
+<option value="2855">Gubała, Wojciech</option>
+<option value="2856">Łabędź, Jerzy</option>
+<option value="2857">Menuhin, Gerard </option>
+<option value="2858">Hitchens, Christopher</option>
+<option value="2859">Ritchie, Andy</option>
+<option value="2860">Christie, Doug</option>
+<option value="2861">Nathanael Foundation, The Brother </option>
+<option value="2862">Radio, Tradcatknight </option>
+<option value="2863">Mahler, Horst </option>
+<option value="2864">Edmonds, Richard</option>
+<option value="2865">Trump , Donald </option>
+<option value="2866">Haverbeck, Ursula </option>
+<option value="2867">Rense, Jeff</option>
+<option value="2868">Carlqvist, Ingrid</option>
+<option value="2869">Ahmadinejad, Mahmoud</option>
+<option value="2870">West , Kevin</option>
+<option value="2871">Dawson , Ryan </option>
+<option value="2872">Moriarty, Seamus</option>
+<option value="2873">Wear, John</option>
+<option value="2874">Höss, Rudolf</option>
+<option value="2875">Heliotis, Panagiotis</option>
+<option value="2876">Miklós, Nyiszli</option>
+<option value="2877">Challen, Stephen</option>
+<option value="2878">Brockschmidt, David </option>
+<option value="2879">Schaefer, Alfred</option>
+<option value="2880">Henderson, Robert</option>
+<option value="2881">Carancini, Andrea</option>
+<option value="2882">Lewy, Prof. Guenter </option>
+<option value="2883">Schemm, Dr. Kearn</option>
+<option value="2884">Germans, Ethnic</option>
+<option value="2885">Sloane, R.T.</option>
+<option value="2886">Buchanan, Patrick J.</option>
+<option value="2887">Goumain, Francis </option>
+<option value="2888">Kapner, Brother Nathanael</option>
+<option value="2889">Spingola, Deanna </option>
+<option value="2890">Orwell, George</option>
+<option value="2891">De Brito, António José </option>
+<option value="2893">Blet, Pierre </option>
+<option value="2894">Cru, Jean Norton</option>
+<option value="2895">Eaton, Steven Daniel </option>
+<option value="2896">Ford, Henry </option>
+<option value="2897">Bernardini, Aldo</option>
+<option value="2898">Lazare, Bernard </option>
+<option value="2899">Leon, Abraham (Abram)</option>
+<option value="2900">Burg, Joseph G.</option>
+<option value="2901">Paulhain, Jean </option>
+<option value="2902">Sizer, Stephen</option>
+<option value="2904"> Remi, Georges</option>
+<option value="2905">Demartial, Georges </option>
+<option value="2906"> A. Fudge, Thomas</option>
+<option value="2907">Heard, Dr Geoffrey </option>
+<option value="2908">Brenner, Lenni</option>
+<option value="2909">Jabotinsky, Vladimir</option>
+<option value="2910">Pressac, Jean-Claude </option>
+<option value="2911"> International, Tribunal Militaire </option>
+<option value="2912">Céline, Louis-Ferdinand</option>
+<option value="2913"> Bardèche, Maurice</option>
+<option value="2914">Piper, Michael Collins</option>
+<option value="2915">Taguieff, Pierre-André</option>
+<option value="2916">Wright, Edwin M. </option>
+<option value="2917">Beit-Zv, Shabtai B.</option>
+<option value="2918">Bochaca, Joaquín</option>
+<option value="2919"> Timko, Mike</option>
+<option value="2920">Spaight, James Molony</option>
+<option value="2921">Dall, Curtis Bean</option>
+<option value="2922">Dilling, Elizabeth</option>
+<option value="2923">Rapin, Nicolas </option>
+<option value="2924"> Rüggeberg, Dieter</option>
+<option value="2925">Genet, Jean </option>
+<option value="2928"> Leese, Arnold</option>
+<option value="2929">Rebatet, Lucien </option>
+<option value="2930">Tv, Press</option>
+<option value="2931">West, Rae</option>
+<option value="2932"> Simons, Chaim</option>
+<option value="2933">Zuckerberg, Mark</option>
+<option value="2934">Parry, Robert</option>
+<option value="2935">Utley, Freda </option>
+<option value="2936"> Berg, Fritz</option>
+<option value="2937"> League, Anti-Defamation</option>
+<option value="2938">Foxman, Abraham </option>
+<option value="2939">Alerme, Col. Michel </option>
+<option value="2940">Arcand, Adrien </option>
+<option value="2941">Zweiter Weltkrieg, UnabhäNgige Expertenkommission Schweiz.</option>
+<option value="2942">Verfassungsschutz, Bundesamt FüR</option>
+<option value="2943"> Desportes, Henri</option>
+<option value="2944">M&#39;Bala M&#39;Bala, Dieudonné </option>
+<option value="2945"> Ebray, Alcide</option>
+<option value="2946">Kristensen, Hans M. </option>
+<option value="2947"> “Amigos De LéOn Degrelle “, AssociaçÃO Cultural</option>
+<option value="2948">Grenfell, Russell </option>
+<option value="2949">Griffin, David Ray</option>
+<option value="2950">Heyne, Johannes </option>
+<option value="2951"> Cierpialkowski, Darius</option>
+<option value="2952"> S. Stern, Kenneth</option>
+<option value="2953">Hartmann, Eric </option>
+<option value="2954">Hanson, Victor Davis </option>
+<option value="2955">Bacque, James </option>
+<option value="2956">Aschenauer, Rudolf</option>
+<option value="2957">Nizer, Louis </option>
+<option value="2958">Pitlik, Herbert</option>
+<option value="2959">Pranaitis, Justinas Bonaventura </option>
+<option value="2960">Vidal-Naquet, Pierre Emmanuel </option>
+<option value="2961"> Holywar, Holywar</option>
+<option value="2962">Holocaust In Romania, International Commission On The</option>
+<option value="2963">Migrant Workers, Hotline For </option>
+<option value="2964">Sutton, Antony C. </option>
+<option value="2965">Christophersen, Thies </option>
+<option value="2966"> Bernanos, Georges</option>
+<option value="2967">Bodoff, Lippman </option>
+<option value="2968">Césaire, Aimé </option>
+<option value="2969">Regras, João Das</option>
+<option value="2970">Dupont, Jean-Claude K. </option>
+<option value="2971">Dumas, Alexandre </option>
+<option value="2972">Abramowicz, LéOn </option>
+<option value="2973">Goldmann, Nahum </option>
+<option value="2974">Des Mousseaux, Roger Gougenot</option>
+<option value="2975">Hébert, Dr. Valerie </option>
+<option value="2976"> Waldman, Felicia</option>
+<option value="2977">Honsik, Gerd </option>
+<option value="2978">Ben-Ari, Eyal </option>
+<option value="2979">Bilu, Yoram </option>
+<option value="2980"> Laubreaux , Alain</option>
+<option value="2981">Laval, Pierre </option>
+<option value="2982"> Mens, Pélagius</option>
+<option value="2983"> Soral, Alain</option>
+<option value="2984">Goldaniga, Edoardo </option>
+<option value="2985">Longo, Edoardo</option>
+<option value="2986">Longo, Eduardo </option>
+<option value="2987"> Ferguson, Niall</option>
+<option value="2988"> Roberts, Andrew</option>
+<option value="2989">Schaefer, Monika </option>
+<option value="2990">Joseph Mearsheimer , John </option>
+<option value="2991"> Walt, Stephen</option>
+<option value="2992">Joseph Lemann, L&#39;Abbé </option>
+<option value="2993">R. Leventhal, Ph.D., Barry </option>
+<option value="2994">Lewy , Guenter </option>
+<option value="2995">Lewy, Guenter </option>
+<option value="2996">W. Marr, Von </option>
+<option value="2997">BardèChe, Maurice </option>
+<option value="2998"> Lehmann (Prêtre), Joseph</option>
+<option value="2999">O&#39;Connell, David</option>
+<option value="3000">O&#39;Keefe, Ted</option>
+<option value="3001"> Yakira , Professor Elhanan</option>
+<option value="3002"> Brennan (Priest), Frank</option>
+<option value="3003">Barton, Dr.Russell </option>
+<option value="3004">Martin, Professor Tony</option>
+<option value="3005">Tidemann, A</option>
+<option value="3006">Germany, Films About </option>
+<option value="3007">King, Diane </option>
+<option value="3008">Ferrell, Mark</option>
+<option value="3009">Dresden, City Of </option>
+<option value="3010">Mengele, Josef </option>
+<option value="3011">Death Of Free Speech, The </option>
+<option value="3012">Bowden, Jonathan David Anthony</option>
+<option value="3013">Mazurek, Wojciech</option>
+<option value="3014">Mazurek, Teresa</option>
+<option value="3015">Ratajczak, Rafał</option>
+<option value="3016">Renouf, Lady Michele </option>
+<option value="3017">For Beginners, Holocaust </option>
+<option value="3018">Other Than The Holocaust, Revisionism</option>
+<option value="3019"> Holocaust Cult, The</option>
+<option value="3020">For Wwii, Real Reasons </option>
+<option value="3021">Photos, Auschwitz</option>
+<option value="3022">Shamir, Yoav </option>
+<option value="3023">Weisberg Zisblat, Irene </option>
+<option value="3024">Hilberg, Raul </option>
+<option value="3025">Camp, Auschwitz</option>
+<option value="3026">Lawson, Anthony </option>
+<option value="3027">Spielberg, Steven </option>
+<option value="3028">Schloss, Eva Geiringer </option>
+<option value="3029"> Eichmann, Otto Adolf</option>
+<option value="3030">Of Auschwitz, William Tell </option>
+<option value="3031">Berret, Keven </option>
+<option value="3032">Viii, Edward</option>
+<option value="3033">Of The Berlin Wall Documentary, The Rise And Fall</option>
+<option value="3034">Survivors, Holocaust</option>
+<option value="3035">Reznik, Lisa</option>
+<option value="3036">Mengele, Josheph</option>
+<option value="3037">Mengele, Josheph</option>
+<option value="3038">Somogyi, Peter</option>
+<option value="3039">Hanan, Rachel</option>
+<option value="3040">Haimi, Yoram</option>
+<option value="3041">NPR</option>
+<option value="3042">Trump, Donald</option>
+<option value="3043">Controversies, Holocaust</option>
+<option value="3044">World Ii, War</option>
+<option value="3045">Varela, Pedro</option>
+<option value="3046">Wiesel, Elie</option>
+<option value="3047">Donauer, Frederick</option>
+<option value="3048">Heimann, Guido</option>
+<option value="3049">Mcinnes, Gavin</option>
+<option value="3050">Mussolini, Benito</option>
+<option value="3051">Johnson, Matthew Raphael</option>
+<option value="3052">Lloyd, Anthony Joseph</option>
+<option value="3053">Show, Game</option>
+<option value="3054">Newsreels, German</option>
+<option value="3055">Lincoln Rockwell, George</option>
+<option value="3056">Ruzamski, Marian</option>
+<option value="3057">Graf, Jürgen</option>
+<option value="3058">Hitler, Eva Anna Paula</option>
+<option value="3059">Hitchcock, Andrew Carrington</option>
+<option value="3060">Free Press, American</option>
+<option value="3061">Pierce, William</option>
+<option value="3062">Fetzer, James H.</option>
+<option value="3063">Machiavelli, Niccolò Di Bernardo Dei</option>
+<option value="3064">Alcazar, Kampf Um Den</option>
+<option value="3065">Voltaire, François-Marie Aroue</option>
+<option value="3066">Bonaparte, Napoleon</option>
+<option value="3067">Bonaparte, Napoleon</option>
+<option value="3068">Bonaparte, Napoleon</option>
+<option value="3069">Durant, Will</option>
+<option value="3070">In Australia, Revisionism</option>
+<option value="3071">Ice Radio, Red</option>
+<option value="3072">Palmgren, Henrik</option>
+<option value="3073">Is An American Politician, Scott M. Jensen</option>
+<option value="3074">Reich, Third</option>
+<option value="3075">Tedor, Richard</option>
+<option value="3076">Hollow, Joshep</option>
+<option value="3077">Carr, Jim</option>
+<option value="3078">Rizoli, Joe</option>
+<option value="3079">Chworostowski, Wojciech</option>
+<option value="3080">Winter, Peter</option>
+<option value="3081">Politics Podcast, Modern</option>
+<option value="3082">Netanyahu, Benjamin</option>
+<option value="3083">Youjis, Emily</option>
+<option value="3084">The Wizard, Morgoth</option>
+<option value="3085">King, Mike</option>
+<option value="3086">Gooeble, Joshep</option>
+<option value="3087">Viguier, Damien</option>
+<option value="3088">Donahue, Phil</option>
+<option value="3089">Winters, Nigel</option>
+<option value="3090">Morrison, Van</option>
+<option value="3091">Naked Prey, The</option>
+<option value="3092">Taylor, Jerold</option>
+<option value="3093">Wittmann, Michael</option>
+<option value="3094">Wittmann, Michael</option>
+<option value="3095">Rushton, Peter</option>
+<option value="3096">Berger, Nora</option>
+<option value="3097">Higgs, Robert</option>
+<option value="3098">Wilde (1912–1989), Cornel</option>
+<option value="3099">Stosstrupp, Der</option>
+<option value="3100">Schmid-Wildy, Ludwig</option>
+<option value="3101">Stinnett, Robert</option>
+<option value="3102">Freeman, Howard</option>
+<option value="3103">Jones, E. Michael</option>
+<option value="3104">Jones, Michael Vincent</option>
+<option value="3105">Jones, E. Michael</option>
+<option value="3106">4, Kron</option>
+<option value="3107">Benjamin, Owen</option>
+<option value="3108">Williamson, Bishop Richard</option>
+ <option value="3109">Bowden, Jonathan</option>
+<option value="3110">Repetita, Bis</option>
+</select>
+</span>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+     require(['/static/codoh/js/require-config.0a6e388f352a.js'], function() {
+         require(['select2'], function() {
+             $("#search-loading").hide(100);
+             $("#search-container").css('display', 'inherit');
+
+             $("#select-languages>select").select2({
+                 placeholder: "Filter by languages",
+                 allowClear: true
+             });
+
+             $("#select-categories>select").select2({
+                 placeholder: "Filter by category",
+                 allowClear: true,
+                 ajax: {
+                     url: '/ajax/categories',
+                     dataType: 'json',
+                 }
+             });
+
+             $("#select-authors>select").select2({
+                 placeholder: "Filter by author",
+                 allowClear: true,
+                 ajax: {
+                     url: '/ajax/authors',
+                     dataType: 'json',
+                 }
+             });
+         });
+     });
+    </script>
+<hr class="hr" />
+<div class="search-results">
+<h3 style="text-align: center">Found <strong>2823</strong> items</h3>
+<hr />
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/einsatzgruppen/en/">
+<em>Einsatzgruppen</em>
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/answerman/" title="AnswerMan"> AnswerMan</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 1998-01-01
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+Is this true, or is it just another lie from <em>the</em> holocaust lobby?
+Douglas Monroe
+AnswerMan Replies:
+<em>The</em> "some groups that killed Jews by shooting them" is probably either a reference to <em>the</em> <em>Einsatzgruppen</em> or to <em>the</em> local East European militia Kommandos.
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/einsatzgruppen/en/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+<a href="/library/document/the-einsatzgruppen-trial/en/">
+<img class="image image-newspost" alt="The Einsatzgruppen Trial" title="The Einsatzgruppen Trial" src="
+        
+        /media/generated/images/einsatzgruppe_small.jpg
+        " />
+</a>
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/the-einsatzgruppen-trial/en/">
+<em>The</em> <em>Einsatzgruppen</em> Trial
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/wear-john/" title="Wear, J."> John Wear</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2018-04-28
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+<em>The</em> prosecution&rsquo;s case was based primarily on <em>the</em> <em>Einsatzgruppen</em> reports his team had discovered in Berlin.
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/the-einsatzgruppen-trial/en/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/the-einsatzgruppen-and-the-holocaust/en/">
+<em>The</em> <em>Einsatzgruppen</em> and <em>the</em> Holocaust
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/bishop-joseph/" title="Bishop, J."> Joseph Bishop</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2009-12-01
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+As <em>the</em> story continues to shift and evolve it appears that <em>the</em> missing &ldquo;victims&rdquo; may yet be attributed to <em>the</em> <em>Einsatzgruppen</em> or even <em>the</em> German army.
+German Field Marshal Erich von Manstein, belied <em>the</em> accuracy of <em>the</em> <em>Einsatzgruppen</em> reports. Photo: 1938.
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/the-einsatzgruppen-and-the-holocaust/en/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/compiti-e-struttura-degli-einsatzgruppendi-carlo/it/">
+Compiti e struttura degli <em>Einsatzgruppen</em>...di Carlo Mattogno
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/olodogma/" title="Olodogma"> Olodogma</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2014-08-31
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+Hilberg e gli <em>Einsatzgruppen</em>
+1.6 Compiti e struttura degli <em>Einsatzgruppen</em>
+&nbsp;
+SS-Brigadef&uuml;hrer Dr.Franz Walter Stahlecker primo comandante dell&#39;Einsatzgruppe A, dal Giugno 1941 fino alla sua morte il 23 marzo 1942
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/compiti-e-struttura-degli-einsatzgruppendi-carlo/it/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/dicerie-einsatzgruppen-loscenita-olocaustica-del/it/">
+Dicerie <em>Einsatzgruppen</em>: l’oscenità olocaustica del prete cattolico patrick desbois
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/olodogma/" title="Olodogma"> Olodogma</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2014-09-02
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+Presentiamo, dopo il&nbsp;primo&nbsp;ed&nbsp; il&nbsp;secondo&nbsp;&nbsp;, un terzo articolo sugli <em>Einsatzgruppen</em>. Viene analizzato un nuovo &quot;ricercatore&quot; sterminazionista, un prete cattolico, ben sponsorizzato dalla olocaust-lobby, tale Patrick Desbois (1).
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/dicerie-einsatzgruppen-loscenita-olocaustica-del/it/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/einsatzgruppen-e-babi-yar-i-fatti-contro-la/it/">
+<em>Einsatzgruppen</em> e Babi Yar: i fatti contro la leggenda
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/olodogma/" title="Olodogma"> Olodogma</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2014-09-01
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+Tali rapporti riferivano variamente la durata del massacro, la cui esecuzione aveva richiesto 48, 36 o 24 ore.Tuttavia, menzionavano raramente che il numero stranamente esatto delle vittime&nbsp;proveniva dai documenti tedeschi&nbsp;catturati (i cosiddetti &ldquo;<em>Einsatzgruppen</em> Report&rdquo;) e tacevano
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/einsatzgruppen-e-babi-yar-i-fatti-contro-la/it/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+<a href="/library/document/after-a-long-wait-the-einsatzgruppen-book-is/en/">
+<img class="image image-newspost" alt="After a long wait, the Einsatzgruppen book is finally in my hands" title="After a long wait, the Einsatzgruppen book is finally in my hands" src="
+        
+        /media/generated/images/hh-vol-39-700pp_small.jpg
+        " />
+</a>
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/after-a-long-wait-the-einsatzgruppen-book-is/en/">
+After a long wait, <em>the</em> <em>Einsatzgruppen</em> book is finally in my hands
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+First Published at CarolynYeager.net
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/yeager-carolyn/" title="Yeager, C."> Carolyn Yeager</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2018-12-24
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+I RECEIVED <em>THE</em> OTHER DAY <em>the</em> long-awaited book&nbsp;<em>The</em> <em>Einsatzgruppen</em> in <em>the</em> Occupied Eastern Territories&nbsp;by Carlo Mattogno and am eager to get into it.
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/after-a-long-wait-the-einsatzgruppen-book-is/en/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/the-pros-and-cons-of-hitch-hikingand-the-jewish/it/">
+<em>The</em> pros and cons of hitch hiking...(and <em>the</em> jewish colonization of Palestine)
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/olodogma/" title="Olodogma"> Olodogma</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2014-07-01
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+<p>.</p>
+<p data-mce-style="text-align: right;">Post OT</p>
+<p data-mce-style="text-align: left;"><strong>Perch&egrave; portare i propri figli in zone estremamente pericolose?</strong></p>
+<p data-mce-style="text-align: left;">Uno stato che ha cura dei propri cittadini, per prassi, sconsiglia ai propri connazionali&nbsp; viaggi in zone a rischio elevato di attentati, sequestri di persona, scontri a fuoco. Questa elementare&nbsp; precauzione &egrave; estranea ai capi del ghetto ebraico …</p>
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/the-pros-and-cons-of-hitch-hikingand-the-jewish/it/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/news-notices-relating-to-the-einsatzgruppen-and/en/">
+News notices relating to <em>the</em> <em>Einsatzgruppen</em> and <em>the</em> 'Holocaust' in <em>the</em> Soviet Union from Judisk Krönika
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/kues-thomas/" title="Kues, T."> Thomas Kues</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2010-07-11
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+In my survey of <em>the</em> war-year issues of this journal - which is still <em>the</em> most important Jewish periodical in Sweden - I came across also a number of news notices relating to <em>the</em> activities of <em>the</em> <em>Einsatzgruppen</em> in <em>the</em> occupied Soviet territories, as well as Soviet evacuations of Jews to <em>the</em> Russian interior
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/news-notices-relating-to-the-einsatzgruppen-and/en/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+<div class="media">
+<div class="media-left" style="width: 100px">
+<figure>
+<p class="image">
+</p>
+</figure>
+</div>
+<div class="media-content search-result-body">
+<div class="columns">
+<div class="column">
+<div class="search-highlight is-size-5 search-title">
+<a class="has-text-grey-dark" href="/library/document/einsatzgruppen-postilla-a-volli-ugo-e-la/it/">
+<em>Einsatzgruppen</em>. Postilla a "volli ugo e la olocau$tica transustanziazione dell’olocau$to in $hoah"
+</a>
+</div>
+<div class="search-highlight is-size-6 search-subtitle">
+</div>
+<div class="details is-size-7">
+<span>
+By&nbsp;<a href="/library/authors/olodogma/" title="Olodogma"> Olodogma</a></span><span>, </span>
+<span class="has-text-grey is-size-7">
+&nbsp;published 2015-08-14
+</span>
+</div>
+<div class="search-highlight search-description is-size-7">
+<p class="content">
+Click
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&lt;&lt;Come se gli <em>Einsatzgruppen</em> che agirono al seguito delle truppe tedesche prima dell&#39;organizzazione industriale
+<br />
+<div class="has-text-right">
+<a class="tag has-text-grey-dark" href="/library/document/einsatzgruppen-postilla-a-volli-ugo-e-la/it/">
+View document&nbsp;&raquo;
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr">
+</div>
+<nav aria-label="page navigation container is-clearfix">
+<ul class="pagination justify-content-center">
+<li>
+<a href="#" class="button" disabled>
+&nbsp;&nbsp;&laquo;&nbsp;previous
+</a>
+</li>
+<li class="is-pulled-right">
+<a href="/search/?sorting=relevance&amp;q=the+einsatzgruppen&amp;page=2" class="button">
+next&nbsp;&raquo;
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div id="footer">
+<div class="container">
+<div class='level'>
+<div class='level-left'>
+<div class='level-item'>
+We should look good in:&nbsp;
+<img src="/static/codoh/images/icons/xsmall_ff.86129d458e40.png" alt="Fire Fox Icon" class="nob" />
+<img src="/static/codoh/images/icons/xsmall_chrome.957b10df2551.png" alt="Chrome Icon" class="nob" />
+<img src="/static/codoh/images/icons/xsmall_safari.7b844efad33a.png" alt="Safari Icon" class="nob" />
+<a href='/contact-us' target='_blank'>
+Report a bug!
+</a>
+&nbsp;
+</div>
+</div>
+<div class='level-right'>
+<div class='level-item'>
+<p>
+&copy; 1996-2023 CODOH.com | All Rights Reserved
+</p>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+<!-- * kick off CODOH js features on this site */ -->
+  require(['codoh'], function(codoh) {
+    codoh.init();
+  });
+</script>
+</div>
+<div id="extrafooter">
+</div>
+</div>
+</body>
+</html>

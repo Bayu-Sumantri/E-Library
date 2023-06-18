@@ -1,0 +1,203 @@
+<section class="content">
+	<div class="container-fluid">
+		
+		<?= anchor('Dash/input', '<button type="button" class="btn btn-primary"><i class="fa fa-info-circle "> Display</i></button>'); ?>
+
+		<div class="card card-success">
+			<div class="card-header">
+				<h3 class="card-title">G. Riwayat Vaksinasi</h3>
+
+				<div class="card-tools">
+					<button type="button" class="btn btn-tool" data-card-widget="collapse">
+						<i class="fas fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-tool" data-card-widget="remove">
+						<i class="fas fa-times"></i>
+					</button>
+				</div>
+			</div>
+			<!-- /.card-header -->
+			<div class="card-body">
+				<?= form_open_multipart('input_all/tambah_jurnal'); ?>
+
+
+				<div class="form-floating mb-3">
+					<input type="judul" class="form-control" id="floatingInput" name="judul" placeholder="name@example.com">
+					<label for="floatingInput">Judul Buku</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="hidden" class="form-control" id="floatingInput" name="penulis" placeholder="name@example.com">
+					<label for="floatingInput">Penulis</label>
+				</div>
+				<div class="form-floating mb-5">
+					<input type="date" class="form-control" id="floatingInput" name="tahun_rilis" placeholder="name@example.com">
+					<label for="floatingInput">Tahun Rilis</label>
+				</div>
+
+
+				<div class="row mb-5" style="">
+					<div class="col">
+
+
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="komedi" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Komedi
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="penelitian" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Penelitian
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="romantis" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Romantis
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="fanfiction" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Fanfiction
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="Science Fiction (Fiksi Ilmiah)" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Science Fiction (Fiksi Ilmiah)
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="Fantasi" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Fantasi
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="histori" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Histori
+							</label>
+						</div>
+
+					</div><div class="col">
+						
+						
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="horor" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Horor
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="drama" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Drama
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="musik" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Musik
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="mecha" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Mecha
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="militer" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Militer
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="megic" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Megic
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="food" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Food
+							</label>
+						</div>
+
+					</div><div class="col">
+						
+						
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="spiritual" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Spiritual
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="humor" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Humor
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="misteri" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Misteri
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="puisi" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Puisi
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="klasik" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Klasik
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="adventure" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Adventure
+							</label>
+						</div><div class="form-check">
+							<input class="form-check-input" type="checkbox" name="genre[]" value="motivasi" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Motivasi
+							</label>
+						</div>
+
+					</div>
+				</div>
+
+				<textarea name="isi_buku" id="editor"></textarea>
+
+				<br>
+
+				<div class="mb-3">
+					<label for="formFile" class="form-label">Sampul Buku</label>
+					<input class="form-control" type="file" id="formFile" name="sampul">
+				</div>
+
+
+				<button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane "> Submit</i></button>
+
+
+
+				<?= form_close(); ?>
+			</div>
+		</section>
+
+
+		<script src=" <?=base_url('assets/ennocuy/enno/')?>assets/tinymce/tinymce.min.js"></script>
+
+		<script>
+			tinymce.init({
+				forced_root_block : false,
+				selector: '#editor',
+				width: 1000,
+				height: 300,
+				plugins: [
+					'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+					'searchreplace', 'wordcount', 'visualblocks', 'visualchars', 'code', 'fullscreen', 'insertdatetime',
+					'media', 'table', 'emoticons', 'template', 'help'
+					],
+				toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+				'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+				'forecolor backcolor emoticons | help',
+				menu: {
+					favs: { title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons' }
+				},
+				menubar: 'favs file edit view insert format tools table help',
+				content_css: 'css/content.css' 
+			});
+		</script>
