@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Jun 19, 2023 at 03:09 AM
+- Server version: 10.4.24-MariaDB
+- PHP Version: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="loginci" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="jurnal">
+                CREATE TABLE `jurnal` (
+                  `id_buku` int(11) NOT NULL AUTO_INCREMENT,
+                  `penulis` varchar(50) NOT NULL,
+                  `tahun_rilis` date NOT NULL,
+                  `isi_buku` varchar(5000) NOT NULL,
+                  `sampul` varchar(50) NOT NULL,
+                  `judul` varchar(50) NOT NULL,
+                  `genre` varchar(5000) NOT NULL,
+                  `createdate` datetime NOT NULL,
+                  `modifydate` datetime DEFAULT NULL,
+                  PRIMARY KEY (`id_buku`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="tblogin1">
+                CREATE TABLE `tblogin1` (
+                  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(50) NOT NULL,
+                  `id_level` int(11) DEFAULT NULL,
+                  `status_user` int(11) NOT NULL,
+                  `nama_user` varchar(50) NOT NULL,
+                  `email_user` varchar(50) NOT NULL,
+                  `password` varchar(50) NOT NULL,
+                  `pic_user` varchar(50) NOT NULL,
+                  `createdate` datetime NOT NULL,
+                  `modifydate` datetime DEFAULT NULL,
+                  PRIMARY KEY (`id_user`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'loginci'
+    -->
+    <database name="loginci">
+        <!-- Table jurnal -->
+        <table name="jurnal">
+            <column name="id_buku">14</column>
+            <column name="penulis">9/11</column>
+            <column name="tahun_rilis">2001-09-11</column>
+            <column name="isi_buku">&lt;div class=&quot;row mb-5&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Komedi&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;penelitian&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Penelitian&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;romantis&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Romantis&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;fanfiction&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Fanfiction&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;Sci-Fi&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Science Fiction (Fiksi Ilmiah)&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;fantasi&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Fantasi&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;histori&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Histori&lt;/label&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;horor&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Horor&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;drama&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Drama&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;musik&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Musik&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;mecha&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Mecha&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;militer&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Militer&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;megic&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Megic&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;food&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Food&lt;/label&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;spiritual&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Spiritual&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;humor&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Humor&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;misteri&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Misteri&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;puisi&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Puisi&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;klasik&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Klasik&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;adventure&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Adventure&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;&lt;input id=&quot;flexCheckDefault&quot; class=&quot;form-check-input&quot; checked=&quot;checked&quot; name=&quot;genre[]&quot; type=&quot;checkbox&quot; value=&quot;motivasi&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Motivasi&lt;/label&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tox tox-tinymce&quot; role=&quot;application&quot; aria-disabled=&quot;false&quot;&gt;
+&lt;div class=&quot;tox-editor-container&quot;&gt;
+&lt;div class=&quot;tox-editor-header&quot; data-alloy-vertical-dir=&quot;toptobottom&quot;&gt;
+&lt;div class=&quot;tox-promotion&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</column>
+            <column name="sampul">911.jpg</column>
+            <column name="judul">Ambasssss</column>
+            <column name="genre">komedi,penelitian,romantis,fanfiction,Sci-Fi,fantasi,histori,horor,drama,musik,mecha,militer,megic,food,spiritual,humor,misteri,puisi,klasik,adventure,motivasi</column>
+            <column name="createdate">2023-04-28 14:28:55</column>
+            <column name="modifydate">2023-04-28 14:58:22</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">15</column>
+            <column name="penulis">Sosa</column>
+            <column name="tahun_rilis">2023-04-22</column>
+            <column name="isi_buku">&lt;p&gt;vbnm&lt;/p&gt;</column>
+            <column name="sampul">Background_Zoom8.jpg</column>
+            <column name="judul">qwer</column>
+            <column name="genre">Science Fiction (Fiksi Ilmiah)</column>
+            <column name="createdate">2023-04-28 15:59:15</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">16</column>
+            <column name="penulis">Sosa</column>
+            <column name="tahun_rilis">2023-04-19</column>
+            <column name="isi_buku">&lt;p&gt;asdfghjk&lt;/p&gt;</column>
+            <column name="sampul">Capture2.PNG</column>
+            <column name="judul">911</column>
+            <column name="genre">penelitian, &lt;br&gt;fanfiction, &lt;br&gt;Science Fiction (Fiksi Ilmiah)</column>
+            <column name="createdate">2023-04-28 16:07:20</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">17</column>
+            <column name="penulis">Sosa</column>
+            <column name="tahun_rilis">2023-04-18</column>
+            <column name="isi_buku">&lt;p&gt;123&lt;/p&gt;</column>
+            <column name="sampul">Combo.png</column>
+            <column name="judul">poipoi</column>
+            <column name="genre">komedi, &lt;br&gt;penelitian, &lt;br&gt;romantis</column>
+            <column name="createdate">2023-04-28 16:08:33</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">18</column>
+            <column name="penulis">Sosa</column>
+            <column name="tahun_rilis">2023-04-19</column>
+            <column name="isi_buku">&lt;p&gt;2131232131&lt;/p&gt;</column>
+            <column name="sampul">CheckBox.png</column>
+            <column name="judul">12344444</column>
+            <column name="genre">komedi, &lt;br&gt;horor, &lt;br&gt;mecha, &lt;br&gt;food, &lt;br&gt;misteri</column>
+            <column name="createdate">2023-04-28 16:08:56</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">19</column>
+            <column name="penulis">Sosa</column>
+            <column name="tahun_rilis">2023-04-03</column>
+            <column name="isi_buku">&lt;p&gt;as&lt;/p&gt;</column>
+            <column name="sampul">Get.png</column>
+            <column name="judul">Ini Judul</column>
+            <column name="genre">thriler / suspense / mystery</column>
+            <column name="createdate">2023-04-28 16:09:19</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">20</column>
+            <column name="penulis">Sosa</column>
+            <column name="tahun_rilis">2023-05-02</column>
+            <column name="isi_buku">&lt;p&gt;poipoipoipoipoipoipoipoipoipoipoipoipoip&lt;/p&gt;</column>
+            <column name="sampul">Screenshot_(2).png</column>
+            <column name="judul">2 Mei 2023 (1)</column>
+            <column name="genre">komedi</column>
+            <column name="createdate">2023-05-02 10:50:42</column>
+            <column name="modifydate">2023-05-03 08:34:56</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">21</column>
+            <column name="penulis">Sosa</column>
+            <column name="tahun_rilis">2022-09-09</column>
+            <column name="isi_buku">&lt;p&gt;sdasdasdasdasdsad&lt;/p&gt;</column>
+            <column name="sampul">Screenshot_(14).png</column>
+            <column name="judul">Tsess</column>
+            <column name="genre">komedi, &lt;br&gt;spiritual, &lt;br&gt;humor</column>
+            <column name="createdate">2023-05-03 08:35:59</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="jurnal">
+            <column name="id_buku">22</column>
+            <column name="penulis">Fazly</column>
+            <column name="tahun_rilis">2023-05-08</column>
+            <column name="isi_buku">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque ligula egestas enim malesuada, sed tincidunt libero ornare. Sed purus arcu, vehicula in arcu eget, ultricies maximus neque. Proin id vehicula justo, vitae laoreet urna. Integer malesuada magna quis faucibus laoreet. Phasellus vel sagittis dui. Quisque sit amet varius eros. Phasellus blandit nunc vitae rutrum aliquet.&lt;/p&gt;
+&lt;p&gt;Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sed volutpat massa. Curabitur volutpat feugiat magna at molestie. Donec tellus sem, laoreet vitae magna posuere, luctus rutrum erat. Nam urna magna, lobortis aliquam quam id, lobortis lobortis justo. Integer tincidunt tristique odio. Sed vitae augue eu metus pretium accumsan. Fusce tellus odio, suscipit id ex sit amet, ultrices tincidunt augue. Phasellus laoreet quam at elit pretium efficitur. Ut dignissim ex sed arcu lacinia, at dictum nisl dictum. Etiam id enim ut massa rutrum porttitor sit amet ac erat. Suspendisse sit amet magna quis leo porta consequat a a tortor. Sed interdum, elit vitae malesuada eleifend, urna massa euismod sapien, nec dictum enim ex vel lectus.&lt;/p&gt;
+&lt;p&gt;Etiam ut malesuada lorem, at rutrum turpis. Suspendisse ac molestie risus. Morbi diam turpis, bibendum at suscipit lobortis, convallis quis lorem. Sed gravida blandit pharetra. Integer vehicula arcu magna, et consequat augue venenatis in. Sed sit amet diam metus. Aliquam nisl sem, commodo ac erat ut, dictum porta mauris. Maecenas gravida libero aliquam leo cursus, et semper tortor sollicitudin.&lt;/p&gt;
+&lt;p&gt;Aliquam tristique nisi id ante ullamcorper, a venenatis dolor tristique. Sed tempus nec orci eu fringilla. In nec rutrum nulla. Nam vehicula, ante at dignissim commodo, dui nibh porttitor ante, sed egestas velit urna ac massa. Etiam volutpat velit quis urna consequat pellentesque. Vestibulum hendrerit imperdiet sagittis. Cras sem diam, facilisis non fringilla nec, iaculis at neque. Aliquam erat volutpat. Etiam id felis ac ex ornare auctor.&lt;/p&gt;
+&lt;p&gt;Aliquam ligula diam, aliquam et felis sit amet, suscipit suscipit justo. Aliquam sollicitudin ante non urna ullamcorper, eu porta dolor interdum. Aenean rhoncus aliquam tempus. Nam pellentesque ante euismod turpis aliquet, nec eleifend mi euismod. Aenean fermentum scelerisque ante, in pellentesque risus ullamcorper eget. Nullam metus augue, accumsan viverra nunc in, elementum consequat nunc. Integer quis eleifend sem, et consectetur neque. Nam interdum nisi metus, congue pellentesque turpis tempus ac. Nulla lobortis purus eu est fringilla, sed interdum velit venenatis.&lt;/p&gt;</column>
+            <column name="sampul">Winter.jpg</column>
+            <column name="judul">Lorem</column>
+            <column name="genre">komedi</column>
+            <column name="createdate">2023-05-15 08:53:04</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <!-- Table tblogin1 -->
+        <table name="tblogin1">
+            <column name="id_user">2</column>
+            <column name="username">qqq</column>
+            <column name="id_level">2</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">ww</column>
+            <column name="email_user">qq@qq.com</column>
+            <column name="password">da39a3ee5e6b4b0d3255bfef95601890afd80709</column>
+            <column name="pic_user"></column>
+            <column name="createdate">2023-03-25 10:45:28</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">3</column>
+            <column name="username">gghggh</column>
+            <column name="id_level">2</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">qqq</column>
+            <column name="email_user">vq@vq.com</column>
+            <column name="password">da39a3ee5e6b4b0d3255bfef95601890afd80709</column>
+            <column name="pic_user"></column>
+            <column name="createdate">2023-03-25 10:54:44</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">4</column>
+            <column name="username">baba</column>
+            <column name="id_level">2</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">qq</column>
+            <column name="email_user">bayu@gmail.com</column>
+            <column name="password">da39a3ee5e6b4b0d3255bfef95601890afd80709</column>
+            <column name="pic_user"></column>
+            <column name="createdate">2023-03-25 11:01:55</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">5</column>
+            <column name="username">bbb</column>
+            <column name="id_level">2</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">ggg</column>
+            <column name="email_user">bbb@gmail.com</column>
+            <column name="password">5cb138284d431abd6a053a56625ec088bfb88912</column>
+            <column name="pic_user">ggg.png</column>
+            <column name="createdate">2023-03-25 11:07:47</column>
+            <column name="modifydate">2023-04-27 10:08:00</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">6</column>
+            <column name="username">bayu</column>
+            <column name="id_level">1</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">bayu</column>
+            <column name="email_user">bayu11@gmail.com</column>
+            <column name="password">533d9c7fd1f7011235903f35e42e28332b851401</column>
+            <column name="pic_user">bayu3.jpg</column>
+            <column name="createdate">2023-04-13 09:20:56</column>
+            <column name="modifydate">2023-04-26 09:43:28</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">7</column>
+            <column name="username">nobar cuy</column>
+            <column name="id_level">2</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">nobar</column>
+            <column name="email_user">nobar@team.com</column>
+            <column name="password">91b8140a54351f4ea4a091c103aa8404f45e1650</column>
+            <column name="pic_user"></column>
+            <column name="createdate">2023-04-13 10:48:18</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">8</column>
+            <column name="username">abadeblouw</column>
+            <column name="id_level">2</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">ambatukam</column>
+            <column name="email_user">ambatukam@ambasing.com</column>
+            <column name="password">411ee79ab1234dccb81ec71f5af54dae159b366b</column>
+            <column name="pic_user"></column>
+            <column name="createdate">2023-04-14 08:02:58</column>
+            <column name="modifydate">NULL</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">10</column>
+            <column name="username">Sosa</column>
+            <column name="id_level">1</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">Athar Fazli  </column>
+            <column name="email_user">atharfs9@gmail.com</column>
+            <column name="password">b300026710073b4811398a426e1c21016f8c4237</column>
+            <column name="pic_user">Athar_Fazli.PNG</column>
+            <column name="createdate">2023-04-28 10:20:04</column>
+            <column name="modifydate">2023-05-02 09:59:22</column>
+        </table>
+        <table name="tblogin1">
+            <column name="id_user">11</column>
+            <column name="username">Fazly</column>
+            <column name="id_level">2</column>
+            <column name="status_user">1</column>
+            <column name="nama_user">Atrrrrr</column>
+            <column name="email_user">asd@mail.edu</column>
+            <column name="password">5fdcc5ca71faabbd0e3c9057658d1c89412b7476</column>
+            <column name="pic_user">Atrrrrr.jpg</column>
+            <column name="createdate">2023-05-15 08:26:19</column>
+            <column name="modifydate">2023-05-15 08:29:13</column>
+        </table>
+    </database>
+</pma_xml_export>
